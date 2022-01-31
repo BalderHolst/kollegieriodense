@@ -48,7 +48,7 @@ def get_facilities(soup):
 
 	for line in lines:
 		better_line = line.replace("\n\t\t","").replace("\n \t","").replace("\n","").replace("\t","").replace(".",". ").replace(".  ",". ").replace("\u200b","")
-		if(len(better_line) > 3):
+		if(len(better_line) > 3 and better_line != "‹ forrige"):
 			better_lines.append(better_line)
 
 	# print(better_lines)
