@@ -24,7 +24,7 @@ def get_name(soup):
 	
 	return(name)
 
-def get_description(soup):
+def get_facilities(soup):
 	tags = soup.find_all("li")[11:]
 	datapoints = []
 
@@ -168,7 +168,7 @@ def decode_studiebolig_odense(soup):
 	data = {}
 
 	data['name'] = get_name(soup)
-	data['description'] = get_description(soup)
+	data['facilities'] = get_facilities(soup)
 
 	data['dorms'] = {}
 	data['dorms']['prices'] = get_prices(soup)

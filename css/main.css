@@ -1,11 +1,12 @@
-
+ 
 :root {
 	--rows: 3;
 	--header-font: 'Bahnschrift SemiBold', sans-serif;
 	--space: 13%;
-	--extra-space: 14px;
+	--extra-space: 1vw;
 	--corner-radius: 4px;
 	--shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	--button-hover-delay: 200ms;
 }
 
 *{
@@ -62,7 +63,7 @@ header a{
 	border-radius: 5px;
 	text-decoration: none;
 	color:black;
-	transition: 200ms;
+	transition: var(--button-hover-delay);
 }
 
 .nav:hover{

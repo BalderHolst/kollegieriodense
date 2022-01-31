@@ -138,8 +138,14 @@ function createCard(n,obj){
 	var card_back = document.createElement('div');
 	card_back.classList.add("card-back");
 
+	var button = document.createElement('a');
+	button.classList.add("to-page");
+	button.setAttribute("href","https://www.google.com/")
+	button.innerHTML = "se mere"
+
 	card_back.appendChild(header);
 	card_back.appendChild(text);
+	card_back.appendChild(button);
 
 	 // Merge
 
@@ -174,7 +180,9 @@ function format_range(arr,ender, round = true){
 		max = Math.round(max)
 	}
 
-	console.log(arr,numbers);
+	// console.log(arr,numbers);
+
+	if(min == max) return(min + ender);
 
 	return(min + ender + " - " + max + ender);
 }
