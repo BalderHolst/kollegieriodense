@@ -1,0 +1,45 @@
+
+
+[
+{
+	"link": "https://www.studiebolig-odense.dk/departments/314",
+	"decoding_function": "decode_studiebolig_odense"
+},
+{
+	"link": "https://www.studiebolig-odense.dk/departments/307",
+	"decoding_function": "decode_studiebolig_odense"
+},
+{
+	"link": "https://www.studiebolig-odense.dk/departments/4301?page=1&language=da",
+	"decoding_function": "decode_studiebolig_odense"
+},
+{
+	"link": "https://studiebolig-odense.dk/departments/311",
+	"decoding_function": "decode_studiebolig_odense"
+},
+{
+	"link": "https://www.studiebolig-odense.dk/departments/304",
+	"decoding_function": "decode_studiebolig_odense"
+},
+{
+	"link": "https://www.studiebolig-odense.dk/departments/4001",
+	"decoding_function": "decode_studiebolig_odense"
+},
+{
+	"link": "https://www.studiebolig-odense.dk/departments/312",
+	"decoding_function": "decode_studiebolig_odense"
+},
+{
+	"link": "https://www.studiebolig-odense.dk/departments/313",
+	"decoding_function": "decode_studiebolig_odense"
+},
+{
+	"link": "https://www.studiebolig-odense.dk/departments/315",
+	"decoding_function": "decode_studiebolig_odense"
+},
+{
+	"link": "https://www.studiebolig-odense.dk/departments/310",
+	"decoding_function": "decode_studiebolig_odense"
+
+}
+]

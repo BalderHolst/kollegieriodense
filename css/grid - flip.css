@@ -1,0 +1,146 @@
+
+:root {
+	--rows: 3;
+	--flip-duration: 800ms;
+}
+
+
+
+
+#grid-container {
+	margin: 20px var(--space);
+	font-family: Arial;
+	display: grid;
+	grid-template-columns: repeat(var(--rows), calc(100% / var(--rows))); /*hvor mange rækker skal der være?*/
+}
+
+.card {
+
+	height: 320px;
+	/*boks*/
+	background-color: #FFFFFF;
+	border: 1px solid black;
+	padding: 0px;
+	margin: 18px;
+	border-radius: 8px;
+
+	position: relative;
+
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	cursor: pointer;
+
+	/*animation*/
+	transition: transform 200ms;
+
+
+
+	/*tekst*/
+	font-size: 25px;
+	text-align: left;
+	color: black;
+	text-decoration: none;
+	overflow:hidden
+
+
+}
+
+.card:hover{
+	transform: translateY(-5px);
+}
+
+.card img{
+	position: relative;
+	top: 0;
+
+
+	margin: 0;
+	padding: 0;
+	height: 220px;
+}
+
+.text-box{
+	font-family: var(--header-font);
+	font-size: 	23px;
+
+	position: absolute;
+	top: 8%;
+	left: 0%;
+
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	padding-left: 3%;
+	padding-right: 20px;
+	border-radius: 0px 4px 4px 0px;
+}
+
+
+.info{
+	/*background-color: red;*/
+	margin: 0px 10px 16px 10px;
+	font-size: 10px;
+}
+
+
+.card-back{
+
+	height: 100%;
+	position: absolute;
+	top: 0;
+	margin: 6px;
+	opacity: 0;
+}
+
+@keyframes appear{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes disappear{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+@keyframes flip{
+	0%{
+		/*height: 270px;*/
+		opacity: 1.0;
+	}
+
+	40%{
+		opacity: 1.0;
+	}
+
+	50%{
+		margin-right: 50%;
+		margin-left: 50%;
+		/*height: 200px;*/
+		opacity: 0;
+	}
+
+	60%{
+		opacity: 1;
+	}
+
+	100%{
+		height: auto;
+	}
+}
+
+div.flipped{
+	animation: flip var(--flip-duration) linear forwards;
+}
+div.flipped div.card-front{
+	animation: disappear 2ms linear forwards calc(var(--flip-duration)/2) alternate;
+}
+div.flipped div.card-back{
+	animation: appear 2ms linear forwards calc(var(--flip-duration)/2) alternate;
+}

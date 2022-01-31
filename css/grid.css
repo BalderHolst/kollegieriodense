@@ -1,0 +1,148 @@
+
+:root {
+	--rows: 3;
+	--flip-duration: 150ms;
+}
+
+
+
+
+#grid-container {
+	margin: 0px var(--space);
+	display: grid;
+	grid-template-columns: repeat(var(--rows), calc(100% / var(--rows))); /*hvor mange rækker skal der være?*/
+}
+
+.card {
+
+	height: 320px;
+	/*boks*/
+	background-color: #FFFFFF;
+	/*border: 1px solid black;*/
+	padding: 0px;
+	margin: 0px var(--extra-space) 36px var(--extra-space);
+	border-radius: var(--corner-radius);
+
+	position: relative;
+
+	box-shadow: var(--shadow);
+
+	cursor: pointer;
+
+	/*animation*/
+	transition: transform 200ms;
+
+
+
+	/*tekst*/
+	font-size: 25px;
+	text-align: left;
+	color: black;
+	text-decoration: none;
+	overflow:hidden
+
+
+}
+
+.card:hover{
+	transform: translateY(-5px);
+}
+
+.card img{
+	object-fit: cover;
+
+	position: relative;
+	top: 0;
+
+
+	margin: 0;
+	padding: 0;
+	height: 220px;
+	width: 100%;
+}
+
+.card-title{
+	font-family: var(--header-font);
+	font-size: 23px;
+
+	position: absolute;
+	top: 8%;
+	left: 0%;
+
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	padding: 0.3em 6% 0.2em 4%;
+	/*padding-left: 3%;*/
+	/*padding-right: 20px;*/
+	border-radius: 0px var(--corner-radius) var(--corner-radius) 0px;
+	max-width: 90%;
+}
+
+
+.info{
+	/*background-color: red;*/
+	margin: 0px 10px 16px 10px;
+	font-size: 13px;
+}
+
+
+.infobar{
+	/*grid*/
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+
+	/*position*/
+
+	margin: 0px 4px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+
+	/*text*/
+	font-family: var(--header-font);
+	font-size: 13.5px;
+	text-align: center;
+
+	/*border*/
+	border-bottom: 1px solid black;	
+}
+
+.infobar *{
+	/*margin*/: 
+
+	height: 1.5em;
+}
+.space{
+	position: relative;
+	top: -0.2em;
+}
+
+.card-front{
+	opacity: 1;
+	transition: opacity var(--flip-duration);
+}
+
+
+.card-back{
+	height: 100%;
+	position: absolute;
+	top: 0;
+	margin: 10px;
+
+	opacity: 0;
+	transition: var(--flip-duration);
+}
+
+.description{
+	font-size: 10px;
+}
+.description-header{
+	font-size: 25px;
+}
+
+
+div.flipped div.card-front{
+	opacity: 0;
+}
+div.flipped div.card-back{
+	opacity: 1;
+}

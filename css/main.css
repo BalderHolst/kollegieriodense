@@ -1,0 +1,114 @@
+
+:root {
+	--rows: 3;
+	--header-font: 'Bahnschrift SemiBold', sans-serif;
+	--space: 13%;
+	--extra-space: 14px;
+	--corner-radius: 4px;
+	--shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: rgb(2,0,36);
+	background-color: #f0f0f0;
+	margin: 0;
+}
+
+header{
+	position: relative;
+	font-family: var(--header-font);
+	background-color: #b3ebfc;
+	margin:0;
+	padding: 6px 20px;
+	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+	border-bottom: 1.5px solid black;
+	border-top: 1.5px solid black;
+}
+
+header a{
+	position: relative;
+	left: var(--space);
+
+	text-decoration: none;
+	color:  black;
+
+}
+
+.title{
+	font-size: 2.5vw;
+
+	padding: 10px;
+	margin: 10px;
+}
+
+
+
+#navbar{
+	font-size: min(2vw,15px);
+	position: absolute;
+	right: calc(2% + var(--space));
+	top: calc(50% - (min(2vw,15px))/2);
+}
+
+.nav{
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5px;
+	text-decoration: none;
+	color:black;
+	transition: 200ms;
+}
+
+.nav:hover{
+	background-color: rgba(50, 50, 50, 0.1);
+}
+
+.text-container{
+	width: 100%;
+	border: 1px solid black;
+}
+
+.header{
+	font-family: var(--header-font);
+	/*margin-top: 3vw;*/
+	margin-bottom: 3px;
+}
+
+.text-box{
+	margin: 20px calc(var(--space) + var(--extra-space));
+	padding: 20px 30px;
+	background-color: white;
+	box-shadow: var(--shadow);
+	border-radius: var(--corner-radius);
+
+	font-family: Noto Sans, sans-serif;
+
+}
+
+/*scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
