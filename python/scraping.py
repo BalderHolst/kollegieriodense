@@ -10,7 +10,7 @@ from decode_studiebolig_odense import decode_studiebolig_odense
 
 def getWebsites():
 	s = ""
-	with open("websites.json",'r') as f:
+	with open("../json/websites v.2.json",'r') as f:
 		s = json.load(f)
 	return(s)
 
@@ -72,16 +72,15 @@ def do_it():
 	for website in websites:
 		print(f"Scraping: {website['link']}")
 
-		data.append(decode(website))
+		data.append(website | decode(website))
 
-	with open("../json/out.json",'w') as f:
+	with open("../json/scraped.json",'w') as f:
 		json.dump(data,f)
 
 if __name__ == "__main__":
 
 	do_it()
 
+	
 
-	# print(decode(websites[1]))
 
-	# print(data)

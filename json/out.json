@@ -1,6 +1,8 @@
 [
   {
     "name": "Blangstedg\\u00e5rdkollegiet",
+    "link": "https://www.studiebolig-odense.dk/departments/314",
+    "decoding_function": "decode_studiebolig_odense",
     "description": [
       "50 beboere",
       "20 etv\\u00e6relses-, 5 halvandenv\\u00e6relses- og 10 tov\\u00e6relseslejligheder",
@@ -83,6 +85,8 @@
   },
   {
     "name": "Carl Nielsen Kollegiet",
+    "link": "https://www.studiebolig-odense.dk/departments/307",
+    "decoding_function": "decode_studiebolig_odense",
     "description": [
       "48 beboere",
       "24 etv\\u00e6relses lejligheder",
@@ -139,6 +143,8 @@
   },
   {
     "name": "H. C. \\u00d8rsteds Kollegiet",
+    "link": "https://www.studiebolig-odense.dk/departments/4301?page=1&language=da",
+    "decoding_function": "decode_studiebolig_odense",
     "description": [
       "H. C. \\u00d8rstedskollegiet best\\u00e5r af 519 boliger fordelt i 3 blokke. \\u00a0 Hvor blok 1 og 3 best\\u00e5r af enkeltv\\u00e6relses boliger fordelt p\\u00e5 16 f\\u00e6llesk\\u00f8kkener, med 15 beboer p\\u00e5 hvert k\\u00f8kken. ",
       "Blok 2 best\\u00e5r af 40 2-v\\u00e6relses lejligheder med eget k\\u00f8kken, toilet, bad og en lille have. BEM\\u00c6RK: boligerne i blok 2 kr\\u00e6ver 2 beboere, de er ikke delevenlige men henvender sig til par. ",
@@ -302,6 +308,8 @@
   },
   {
     "name": "Hans Tausen kollegiet",
+    "link": "https://studiebolig-odense.dk/departments/311",
+    "decoding_function": "decode_studiebolig_odense",
     "description": [
       "38 beboere",
       "et-, halvanden-, to- og trev\\u00e6relseslejligheder",
@@ -555,6 +563,8 @@
   },
   {
     "name": "J. B. Winsl\\u00f8wkollegiet",
+    "link": "https://www.studiebolig-odense.dk/departments/304",
+    "decoding_function": "decode_studiebolig_odense",
     "description": [
       "D\\u00f8rtelefon",
       "Eget k\\u00f8kken med k\\u00f8le/fryseskab og komfur med ovn",
@@ -757,6 +767,8 @@
   },
   {
     "name": "Kaj Munk Kollegiet",
+    "link": "https://www.studiebolig-odense.dk/departments/4001",
+    "decoding_function": "decode_studiebolig_odense",
     "description": [],
     "dorms": {
       "prices": [
@@ -798,6 +810,8 @@
   },
   {
     "name": "Lindekollegiet",
+    "link": "https://www.studiebolig-odense.dk/departments/312",
+    "decoding_function": "decode_studiebolig_odense",
     "description": [
       "50 beboere",
       "et-, halvanden- og tov\\u00e6relseslejligheder",
@@ -1158,6 +1172,8 @@
   },
   {
     "name": "Slotsgadekollegiet",
+    "link": "https://www.studiebolig-odense.dk/departments/313",
+    "decoding_function": "decode_studiebolig_odense",
     "description": [
       "30 beboere",
       "28 et- og tov\\u00e6relseslejligheder",
@@ -1384,6 +1400,8 @@
   },
   {
     "name": "Tornbjergkollegiet",
+    "link": "https://www.studiebolig-odense.dk/departments/315",
+    "decoding_function": "decode_studiebolig_odense",
     "description": [
       "48 beboere",
       "Huse med 4 v\\u00e6relser",
@@ -1427,6 +1445,8 @@
   },
   {
     "name": "\\u00c5l\\u00f8kkekollegiet",
+    "link": "https://www.studiebolig-odense.dk/departments/310",
+    "decoding_function": "decode_studiebolig_odense",
     "description": [
       "46 beboere",
       "\\u00e9t- og tov\\u00e6relseslejligheder",
