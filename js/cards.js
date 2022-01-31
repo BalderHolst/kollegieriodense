@@ -2,38 +2,28 @@ var number_of_cards = 0;
 
 
 
-
 createCards();
 
 
 for (var i = 0; i < number_of_cards; i++) {
 	id = "card" + i;
 	// document.getElementById(id).onclick = function() {  
-	// 	print(i)  
+	// 	console.log(i)  
 	// };  
 	card = document.getElementById(id)
 	card.setAttribute('onclick', "flip(" + i + ")");
 }
-
-
-
-
-
-function print(x){
-	console.log(x)
-}
-
 
 // ---------------------------------------------------- flip
 
 function flip(n){
 	id = "card" + n
 
-	print(document.getElementById(id));
+	// console.log(document.getElementById(id));
 
 	var element = document.getElementById(id)
 
-	print(element.classList.contains("flipped"));
+	// console.log(element.classList.contains("flipped"));
 
 	if (!element.classList.contains("flipped")){
 		element.classList.add("flipped");
@@ -50,7 +40,7 @@ function flip(n){
 
 function createCards(){
 	getData().then((data) => {
-			console.log(data)
+			// console.log(data)
 			createCardGrid(data);
 		})	
 }
@@ -81,26 +71,17 @@ function createCardGrid(data){
 
 	for (let i = 0; i < cards.length; i++){
 		card = cards[i]
+		card.setAttribute('onclick', "flip(" + i +")");
 		grid.appendChild(card)
 	}
 	// console.log(grid);
 }
 
-// function formatIfRange(list,sufix){
-
-// 	// if(list.length == 0) return("??");
-// 	// if(list.length == 1) return(list[0] + sufix);
-	
-// 	// return(list[0] + sufix + "- " + list[list.length - 1] + sufix);
-
-// 	return(list[0])
-// }
 
 function createCard(n,obj){
 	 //  front
 	 var img = document.createElement('img');
 	 if(obj.img != undefined){ 
-	 	console.log("sefjsle")
 	 	img.setAttribute('src', obj.img);
 	 }
 	 else {
@@ -114,14 +95,14 @@ function createCard(n,obj){
 
 	 var space = document.createElement('div');
 	 space.classList.add('space');
-	 space.innerHTML = "obj.dorms.space"
+	 space.innerHTML = format_range(obj.dorms.space,"m<sup>2</sup>")
 
 	 var rooms = document.createElement('div');
 	// rooms.classList.add('rooms');
 	// rooms.innerHTML = obj.dorms.rooms
 	var cost = document.createElement('div');
 	cost.classList.add('cost');
-	cost.innerHTML = "obj.dorms.cost";
+	cost.innerHTML = format_range(obj.dorms.prices,"kr", false);
 
 	var info_bar = document.createElement('div');
 	info_bar.classList.add('infobar');
@@ -173,10 +154,31 @@ function createCard(n,obj){
 	 grid_item.appendChild(card);
 	 grid_item.classList.add("grid-item");
 
-		// card.setAttribute('onclick', "test(0)");
-
-		return(grid_item);
+	return(grid_item);
 	}
+
+
+function format_range(arr,ender, round = true){
+
+	var numbers = []
+
+	for (var i = 0; i <= arr.length; i++) {
+		if(typeof(arr[i]) == "string") numbers.push(parseFloat(arr[i].replace(",",".")));
+	}
+
+		let min = Math.min.apply(Math, numbers);
+		let max = Math.max.apply(Math, numbers);
+
+	if(round == true){
+		min = Math.round(min)
+		max = Math.round(max)
+	}
+
+	console.log(arr,numbers);
+
+	return(min + ender + " - " + max + ender);
+}
+
 
 
 
@@ -187,7 +189,7 @@ function cutTextBefore(s,cutoff){
 	let end_string = "...";
 
 	if(s.length < cutoff - search_length) {
-		// print("length: " + s.length);
+		// console.log("length: " + s.length);
 		return(s);
 	}
 

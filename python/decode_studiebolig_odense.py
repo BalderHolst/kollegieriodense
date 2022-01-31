@@ -17,7 +17,7 @@ def make_singlespaced(s):
 def get_name(soup):
 	try:
 		title = soup.find('title').string
-		name = title[title.index(' - ') + 3:title.index(' | ')]
+		name = title[title.index(' - ') + 3:title.index(' | ')].replace("kollegiet","-kollegiet")
 	except Exception as e:
 		name = "[No name found]"
 		print(f"Kunne ikke finde kollegiets navn! \n\n Error: {e}")
