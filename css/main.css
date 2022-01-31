@@ -7,6 +7,7 @@
 	--corner-radius: 4px;
 	--shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	--button-hover-delay: 200ms;
+	--accent-color: #b3ebfc;
 }
 
 *{
@@ -24,7 +25,7 @@ body{
 header{
 	position: relative;
 	font-family: var(--header-font);
-	background-color: #b3ebfc;
+	background-color: var(--accent-color);
 	margin:0;
 	padding: 6px 20px;
 	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
@@ -77,8 +78,8 @@ header a{
 
 .header{
 	font-family: var(--header-font);
-	/*margin-top: 3vw;*/
-	margin-bottom: 3px;
+	/*margin-top: 3px;*/
+	/*margin-bottom: 3px;*/
 }
 
 .text-box{
@@ -96,11 +97,12 @@ header a{
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
+  z-index: 0;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: rgba(0, 0, 0, 0); 
 }
  
 /* Handle */
@@ -112,4 +114,14 @@ header a{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
+}
+
+.scroll{
+	overflow-x: hidden;
+	overflow-y: auto;
+	/*overflow: scroll;*/	
+}
+
+.hide{
+	display: none;
 }

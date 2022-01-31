@@ -31,7 +31,8 @@ def get_facilities(soup):
 	lines = []
 
 	for tag in tags:
-		
+		line = ""
+
 		if(len(tag.contents) == 1):
 			lines.append(tag.string)
 		else:
@@ -46,7 +47,9 @@ def get_facilities(soup):
 	better_lines = []
 
 	for line in lines:
-		better_lines.append(line.replace("\n\t\t","").replace("\n \t","").replace("\n","").replace("\t","").replace(".",". ").replace(".  ",". ").replace("\u200b",""))
+		better_line = line.replace("\n\t\t","").replace("\n \t","").replace("\n","").replace("\t","").replace(".",". ").replace(".  ",". ").replace("\u200b","")
+		if(len(better_line) > 8):
+			better_lines.append(better_line)
 
 	# print(better_lines)
 	return(better_lines)

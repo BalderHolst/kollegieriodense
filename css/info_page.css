@@ -1,0 +1,54 @@
+:root{
+	--back-table-border: 1px solid black;
+}
+
+
+
+.back-table {
+	font-size: 11px;
+	text-align: center;
+	padding: 5%;
+
+	display: grid;
+
+  	grid-template-columns: 20% 25% 25% 25%;
+  	grid-template-rows: 15px 15px 15px;
+}
+
+.back-table div{
+	padding: 1px;
+}
+
+.back-table div:nth-child(n+9) {
+	height: 100%;
+  	border-top: var(--back-table-border);
+  	border-bottom: var(--back-table-border);
+}
+.back-table div:nth-child(-n+4) {
+	height: 100%;
+  	border-bottom: var(--back-table-border);
+}
+.back-table div:nth-child(4n+1) {
+	height: 100%;
+  	border-right: var(--back-table-border);
+}
+.back-table div:nth-child(4n+2) {
+	height: 100%;
+  	border-right: var(--back-table-border);
+}
+.back-table div:nth-child(4n+3) {
+	height: 100%;
+  	border-right: var(--back-table-border);
+}
+
+
+
+
+img.checkmark{
+	top: -1px;
+	object-fit: contain;
+	height: 100%;
+	width: 100%;
+	padding: 2px;
+
+}

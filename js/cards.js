@@ -52,7 +52,7 @@ async function getData(){
 	const data = await response.json();
 
 	return(data)
-   
+
 }
 
 function createCardGrid(data){
@@ -113,7 +113,7 @@ function createCard(n,obj){
 
 	var text = document.createElement('div');
 	text.classList.add("info");
-	text.innerHTML = cutTextBefore(obj.description,123);
+	text.innerHTML = cutTextBefore("obj.description",123);
 
 	var card_front = document.createElement('div');
 	card_front.classList.add("card-front");
@@ -132,27 +132,28 @@ function createCard(n,obj){
 
 
 	var text = document.createElement('div');
-	text.classList.add("description");
-	text.innerHTML = obj.description;
+	text.classList.add("facilities");
+	text.appendChild(makeHTMLList(obj.facilities));
 
 	var card_back = document.createElement('div');
 	card_back.classList.add("card-back");
-
-	var button = document.createElement('a');
-	button.classList.add("to-page");
-	button.setAttribute("href","https://www.google.com/")
-	button.innerHTML = "se mere"
+	card_back.classList.add("scroll");
 
 	card_back.appendChild(header);
 	card_back.appendChild(text);
-	card_back.appendChild(button);
+	// card_back.appendChild(button);
 
+	var button = document.createElement('a');
+	button.classList.add("to-page");
+	button.setAttribute("href","pages/page_template.html")
+	button.innerHTML = "Se mere"
 	 // Merge
 
 	 var card = document.createElement('div');
 	 card.classList.add("card");
 	 card.appendChild(card_front)	
 	 card.appendChild(card_back)
+	 card.appendChild(button);
 
 	 card.id = "card" + n;
 
@@ -160,25 +161,25 @@ function createCard(n,obj){
 	 grid_item.appendChild(card);
 	 grid_item.classList.add("grid-item");
 
-	return(grid_item);
+	 return(grid_item);
 	}
 
 
-function format_range(arr,ender, round = true){
+	function format_range(arr,ender, round = true){
 
-	var numbers = []
+		var numbers = []
 
-	for (var i = 0; i <= arr.length; i++) {
-		if(typeof(arr[i]) == "string") numbers.push(parseFloat(arr[i].replace(",",".")));
-	}
+		for (var i = 0; i <= arr.length; i++) {
+			if(typeof(arr[i]) == "string") numbers.push(parseFloat(arr[i].replace(",",".")));
+		}
 
 		let min = Math.min.apply(Math, numbers);
 		let max = Math.max.apply(Math, numbers);
 
-	if(round == true){
-		min = Math.round(min)
-		max = Math.round(max)
-	}
+		if(round == true){
+			min = Math.round(min)
+			max = Math.round(max)
+		}
 
 	// console.log(arr,numbers);
 
@@ -188,7 +189,20 @@ function format_range(arr,ender, round = true){
 }
 
 
+function makeHTMLList(l) {
+	var HTMLList = document.createElement('ul');
 
+	for (var i = 0; i < l.length; i++) {
+		var HTMLItem = document.createElement('li');
+		HTMLItem.innerHTML = l[i];
+
+		HTMLList.appendChild(HTMLItem);
+		
+		
+	}
+
+	return(HTMLList);	
+}
 
 
 

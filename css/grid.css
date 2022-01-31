@@ -135,11 +135,23 @@
 	transition: var(--flip-duration);
 }
 
-.description{
-	word-wrap: normal;
-	width: 50%;
+.facilities{
+	width: 100%;
 	font-size: 14px;
+	/*overflow: scroll;*/
+	/*z-index: 100;*/
+	margin-bottom: 20px;
 }
+
+.facilities ul{
+	list-style: circle;
+}
+
+.facilities ul li{
+	margin: 5px 0px;
+	margin-left: 20px;
+}
+
 .description-header{
 	font-size: 25px;
 }
@@ -156,6 +168,8 @@ div.flipped div.card-back{
 
 	/*animation*/
 	transition: var(--button-hover-delay);
+	opacity: 0;
+	z-index: -1;
 
 	/*position*/
 	position: absolute;
@@ -163,7 +177,7 @@ div.flipped div.card-back{
 	bottom: 0.5vw;
 
 	/*box*/
-	background-color: #999999;
+	background-color: var(--accent-color);
 	border: 1px solid gray;
 	padding: 5px;
 	border-radius: var(--corner-radius);
@@ -175,6 +189,12 @@ div.flipped div.card-back{
 	text-align: center;
 	font-size: 14px;
 }
+
 .to-page:hover{
 	background-color: rgba(200, 200, 200, 1);
+}
+
+.flipped .to-page{
+	z-index: 100;
+	opacity: 1;
 }
