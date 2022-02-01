@@ -146,7 +146,7 @@ function createCard(n,obj){
 
 	var button = document.createElement('a');
 	button.classList.add("to-page");
-	button.setAttribute("href","pages/page_template.html")
+	button.setAttribute("href","pages/" + obj.name + ".html")
 	button.innerHTML = "Se mere"
 	 // Merge
 
