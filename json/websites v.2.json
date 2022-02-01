@@ -20,13 +20,13 @@
   {
     "name": "Hans Tausen kollegiet",
     "link": "https://studiebolig-odense.dk/departments/311",
-    
+    "img": "img/Hans Tausen kollegiet.jpg",
     "decoding_function": "decode_studiebolig_odense"
   },
   {
     "name": "J. B. Winsl\\u00f8wkollegiet",
     "link": "https://www.studiebolig-odense.dk/departments/304",
-    
+    "img": "img/jbw.jpg",
     "decoding_function": "decode_studiebolig_odense"
   },
   {
@@ -50,7 +50,7 @@
   {
     "name": "Tornbjergkollegiet",
     "link": "https://www.studiebolig-odense.dk/departments/315",
-    
+    "img": "img/Tornbjergkollegiet.jpg", 
     "decoding_function": "decode_studiebolig_odense"
   },
   {
