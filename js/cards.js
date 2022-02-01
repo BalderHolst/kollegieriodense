@@ -90,7 +90,8 @@ function createCard(n,obj){
 
 	 var name = document.createElement('div');
 	 name.classList.add("card-title")
-	 name.innerHTML = obj.name;
+	 name.innerHTML = format_name(obj.name);
+	 
 
 
 	 var space = document.createElement('div');
@@ -126,7 +127,7 @@ function createCard(n,obj){
 	// Back
 
 	var header = document.createElement('h3');
-	header.innerHTML = obj.name;
+	header.innerHTML = format_name(obj.name);
 	header.classList.add("header");
 	header.classList.add("description-header");
 
@@ -164,6 +165,10 @@ function createCard(n,obj){
 	 return(grid_item);
 	}
 
+	function format_name(name) {
+		if (name.length > 14) return(name.replace("kollegiet","-kollegiet").replace(" -kollegiet"," kollegiet"));
+	 	else return(name);
+	}
 
 	function format_range(arr,ender, round = true){
 

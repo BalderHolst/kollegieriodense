@@ -173,8 +173,8 @@ div.flipped div.card-back{
 
 	/*position*/
 	position: absolute;
-	right: 0.5vw;
-	bottom: 0.5vw;
+	right: 0.8vw;
+	bottom: 0.6vw;
 
 	/*box*/
 	background-color: var(--accent-color);
