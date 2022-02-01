@@ -1,44 +1,153 @@
 :root{
-	--back-table-border: 1px solid black;
+	--table-border: 1px solid #666666;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+
+.right{
+	margin-left: 3%;
+}
+.left{
+	margin-right: 3%;
+}
+
+.list{
+	margin-top: 8px;
+	margin-left: 20px;
+}
+
+.options-container{
+	margin-top: 20px;
+	text-align: center;
+	/*display: grid;*/
+	/*grid-template-columns: 60% 40%;*/
 }
 
 
 
-.back-table {
+.option, .table-headers{
+	padding: 10px 0px;
+	border-bottom: 2px solid black;
+	display: grid;
+	grid-template-columns: 30% repeat(4, calc(70%/4)) 0;
+
+}
+
+
+
+.option{
+	position: relative;
+	cursor: pointer;
+	transition: var(--button-hover-delay);
+}
+
+.option:hover{
+	background-color: var(--button-hover-color);
+}
+
+.selector{
+	border: 1px solid gray;
+
+	background-color: var(--accent-color);
+	border-radius: var(--corner-radius);
+	padding: 0.7vw 1vw;
+	position: absolute;
+	text-decoration: none;
+	color: black;
+	font-family: var(--header-font);
+
+	box-shadow: var(--shadow);
+
+	top: 0.37vw;
+	right: -140px;
+}
+
+.locations{
+	text-align: left;
+}
+
+.cols{
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.floorplans{
+	position: relative;
+}
+
+.floorplans img{
+	position: absolute;
+	top: 0;
+
+
+	max-width: 100%;
+	max-height: 100%;
+}
+
+
+
+.how-to, .table{
+	margin-top: 20px;
+	margin-bottom: 2%;
+	padding: 2%;
+	border-radius: var(--corner-radius);	
+}
+
+
+.how-to{
+	vertical-align: bottom;
+	border: 2px solid var(--accent-color);
+
+}
+
+.table {
+
 	font-size: 11px;
 	text-align: center;
-	padding: 5%;
+	
+
+
+	background-color: var(--accent-color);
+	/*box-shadow: var(--shadow);*/
+	/*border: var(--table-border);*/
+	
 
 	display: grid;
 
-  	grid-template-columns: 20% 25% 25% 25%;
+  	grid-template-columns: 20% repeat(3, calc(80%/3));
   	grid-template-rows: 15px 15px 15px;
 }
 
-.back-table div{
+.table div{
 	padding: 1px;
 }
 
-.back-table div:nth-child(n+9) {
+.table div:nth-child(n+9) {
 	height: 100%;
-  	border-top: var(--back-table-border);
-  	border-bottom: var(--back-table-border);
+  	border-top: var(--table-border);
+  	border-bottom: var(--table-border);
 }
-.back-table div:nth-child(-n+4) {
+.table div:nth-child(-n+4) {
 	height: 100%;
-  	border-bottom: var(--back-table-border);
+  	border-bottom: var(--table-border);
 }
-.back-table div:nth-child(4n+1) {
+.table div:nth-child(4n+1) {
 	height: 100%;
-  	border-right: var(--back-table-border);
+  	border-right: var(--table-border);
 }
-.back-table div:nth-child(4n+2) {
+.table div:nth-child(4n+2) {
 	height: 100%;
-  	border-right: var(--back-table-border);
+  	border-right: var(--table-border);
 }
-.back-table div:nth-child(4n+3) {
+.table div:nth-child(4n+3) {
 	height: 100%;
-  	border-right: var(--back-table-border);
+  	border-right: var(--table-border);
 }
 
 

@@ -149,15 +149,14 @@ def get_icon_list(icons):
 	return(own)
 
 def get_own_and_shared(soup):
-	own_tags = soup.find_all(class_ = "facilities-FACILITIES_OWN")[1:]
-	shared_tags = soup.find_all(class_ = "facilities-FACILITIES_SHARED")[1:]
+	own_tags = soup.find_all(class_ = "facilities-FACILITIES_OWN")[0:]
+	shared_tags = soup.find_all(class_ = "facilities-FACILITIES_SHARED")[0:]
 
 	# print(own_tags)
 	# print("\n\n")
-	# print(shared_tags[0].contents)
+	# print(shared_tags)
 	# print("\n\n")
 
-	# print(own_tags)
 	own = []
 	shared = []
 

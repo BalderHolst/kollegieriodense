@@ -1,79 +1,55 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../../css/main.css"> 
-  <link rel="stylesheet" href="../../css/grid.css">   
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
-
-  <title>Kollegier</title>
-</head>
-<body>
-
-
-  <header>
-    <a href="index.html">
-      <div class="title">Kollegier i Odense
-    </div>
-    </a>
-    <div id="navbar"> 
-      <a href="../../index.html" class="nav">hjem</a>
-      <a href="om.html" class="nav">om</a>
-      <a href="kontakt.html" class="nav">kontakt</a>
-    </div>
-  </header>
-  
-  <div class="text-box">
-    <h3 class="header" style="margin-top:0;">Om denne hjemmeside</h3>
-    <p>Jeg er en gymnasieelev, der næste år gerne vil begynde at studere. Derfor tænkte jeg selvfølgelig over mulighederne for bolig...</p>
-
-    <h3 class="header">Donationer</h3>
-    <p>Hvis du har lyst til at donere en 10'er til den fattige studerende bag denne hjemmeside, kan der sendes penge over mobilepay på nummeret 31446949.</p>
-  </div>
-
-  <div id="grid-container">
-    
-    <div class="grid-item" onclick="flip(0)">
-      <div class="card flipped" id="card0">
-        <div class="card-front"><img src="img/blangstedgaardkollegiet.jpg">
-          <div class="card-title">Blangstedgårdkollegiet
-          </div>
-          <div class="infobar">
-            <div class="space">24m<sup>2</sup> - 58m<sup>2</sup>
-            </div>
-            <div class="cost">2.58kr - 5.225kr
-            </div>
-          </div>
-          <div class="info">obj.description
-          </div>
-        </div>
-        <div class="card-back scroll"><h3 class="header description-header">Blangstedgårdkollegiet</h3>
-          <div class="facilities">
-            <ul>
-              <li>50 beboere</li>
-              <li>20 etværelses-, 5 halvandenværelses- og 10 toværelseslejligheder</li>
-              <li>Eget køkken og bad</li>
-              <li>Netværk med internetopkobling</li>
-              <li>Røgfri</li>
-              <li>Fællesantenne, YouSee Kabel TV grundpakke</li>
-              <li>Individuel afregning af varmeforbrug</li>
-              <li>Lejligheder fra 23,5 - 47m2. </li>
-              <li>Kollegiet ligger i et stille naturskønt område. Der er en fælles grillplads og volleyball-bane, som benyttes om sommeren. </li>
-              <li>Der er et fællesrum, hvor der afholdes spil- og quiz-aftener og cirka to fællesfester hvert semester. </li>
-              <li>Der er fællesvaskeri og mulighed for at leje fællesrum til private arrangementer. Kun 10 minutter på cykel til Bilka og Rosengårdscentret. </li>
-            </ul>
-            
-          </div>
-        </div><a class="to-page" href="pages/page_template.html">se mere</a>
+  <head>
+    <title>Carl Nielsen Kollegiet</title>
+    <meta charset="utf-8">
+    <link href="../../css/main.css" rel="stylesheet">
+    <link href="../../css/info_page.css" rel="stylesheet">
+    <script defer="defer" src="js/cards.js"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="crossorigin" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&amp;display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <a href="../../index.html">
+        <div class="title">Kollegier i Odense</div>
+      </a>
+      <div id="navbar">
+        <a class="nav" href="../../index.html">hjem</a>
+        <a class="nav" href="../om.html">om</a>
+        <a class="nav" href="../kontakt.html">kontakt</a>
+      </div>
+    </header>
+    <div class="text-box">
+      <h2 class="header">Carl Nielsen Kollegiet</h2>
+      <ul class="list">
+        <li>48 beboere</li>
+        <li>24 etværelses lejligheder</li>
+        <li>12 toværelses lejligheder</li>
+        <li>Eget køkken og bad</li>
+        <li>Netværk med 100 Mb internetopkobling</li>
+        <li>Fællesantenne</li>
+        <li>Fællesvaskeri</li>
+        <li>Røgfri</li>
+        <li>Individuel afregning af varmeforbrug</li>
+        <li>Lejligheder fra 23,5 - 47m2</li>
+        <li>Kollegiet har eget fælleshus, hvor der er gode fællesrum med tv, køkken og aktivitetsrum med bordtennis og dartspil. Der bliver løbende afholdt fællesarrangementer på kollegiet, såsom tour de chambre. </li>
+      </ul>
+      <div class="table">
+        <div></div>
+        <div class="header">Toilet</div>
+        <div class="header">Bad</div>
+        <div class="header">Køkken</div>
+        <div class="header">Eget</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="header">Delt</div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
     </div>
-  </div>
-
-
-
-</body>
+  </body>
 </html>

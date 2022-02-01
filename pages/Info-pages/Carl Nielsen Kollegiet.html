@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <link href="../../css/main.css" rel="stylesheet">
     <link href="../../css/info_page.css" rel="stylesheet">
-    <script defer="defer" src="js/cards.js"></script>
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin="crossorigin" href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&amp;display=swap" rel="stylesheet">
@@ -23,19 +22,65 @@
     </header>
     <div class="text-box">
       <h2 class="header">Carl Nielsen Kollegiet</h2>
-      <ul class="list">
-        <li>48 beboere</li>
-        <li>24 etværelses lejligheder</li>
-        <li>12 toværelses lejligheder</li>
-        <li>Eget køkken og bad</li>
-        <li>Netværk med 100 Mb internetopkobling</li>
-        <li>Fællesantenne</li>
-        <li>Fællesvaskeri</li>
-        <li>Røgfri</li>
-        <li>Individuel afregning af varmeforbrug</li>
-        <li>Lejligheder fra 23,5 - 47m2</li>
-        <li>Kollegiet har eget fælleshus, hvor der er gode fællesrum med tv, køkken og aktivitetsrum med bordtennis og dartspil. Der bliver løbende afholdt fællesarrangementer på kollegiet, såsom tour de chambre. </li>
-      </ul>
+      <div class="cols">
+        <ul class="list left">
+          <li>48 beboere</li>
+          <li>24 etværelses lejligheder</li>
+          <li>12 toværelses lejligheder</li>
+          <li>Eget køkken og bad</li>
+          <li>Netværk med 100 Mb internetopkobling</li>
+          <li>Fællesantenne</li>
+          <li>Fællesvaskeri</li>
+          <li>Røgfri</li>
+          <li>Individuel afregning af varmeforbrug</li>
+          <li>Lejligheder fra 23,5 - 47m2</li>
+          <li>Kollegiet har eget fælleshus, hvor der er gode fællesrum med tv, køkken og aktivitetsrum med bordtennis og dartspil. Der bliver løbende afholdt fællesarrangementer på kollegiet, såsom tour de chambre. </li>
+        </ul>
+        <div class="floorplans right">
+          <img class="floorplan" id="img0" src="https://www.studiebolig-odense.dk/sites/www591/files/public/styles/floor_plan_large/public/ktp_image/udtegning/0307UE110a.jpg%20%20%20%20%20%20%20%20%20%20%20?itok=XrYhVJBi">
+          <img class="floorplan" id="img1" src="https://www.studiebolig-odense.dk/sites/www591/files/public/styles/floor_plan_large/public/ktp_image/udtegning/0307UE120a.jpg%20%20%20%20%20%20%20%20%20%20%20?itok=WxujMyFu">
+        </div>
+        <div class="how-to">Nedenfor kan du vælge et bestemt værelse, og se dets faciliteter og grundplan</div>
+        <div class="table right">
+          <div></div>
+          <div class="header">Toilet</div>
+          <div class="header">Bad</div>
+          <div class="header">Køkken</div>
+          <div class="header">Eget</div>
+          <div class="checkmark">x</div>
+          <div class="checkmark">x</div>
+          <div class="checkmark">x</div>
+          <div class="header">Delt</div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div class="options-container">
+        <div class="table-headers">
+          <div class="header locations">Adresse</div>
+          <div class="header">Størrelse</div>
+          <div class="header">Værrelser</div>
+          <div class="header">Leje</div>
+          <div class="header">Depositum</div>
+        </div>
+        <div class="option" id="option0">
+          <div class="locations">Stationsvænget 5260, Odense S Carl Nielsen Kollegiet</div>
+          <div class="space">24,0m2</div>
+          <div class="rooms">1</div>
+          <div class="prices">2,383kr</div>
+          <div class="depositum">7,149kr</div>
+          <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0307010103070102908" id="selector0" target="_blank">Til side</a>
+        </div>
+        <div class="option" id="option1">
+          <div class="locations">Stationsvænget 5260, Odense S Carl Nielsen Kollegiet</div>
+          <div class="space">51,0m2</div>
+          <div class="rooms">2</div>
+          <div class="prices">4,841kr</div>
+          <div class="depositum">14,523kr</div>
+          <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0307020203070102908" id="selector1" target="_blank">Til side</a>
+        </div>
+      </div>
     </div>
   </body>
 </html>

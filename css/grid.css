@@ -119,6 +119,7 @@
 }
 
 .card-front{
+	z-index: 100;
 	opacity: 1;
 	transition: opacity var(--flip-duration);
 }
