@@ -49,7 +49,7 @@ def create_page(data):
 
 				with ul(cls="list left"):
 					for item in data['facilities']:
-						li(item)
+						li(item,cls="list-item")
 				
 
 				# with div(cls="right"):

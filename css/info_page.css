@@ -22,6 +22,10 @@ body{
 	margin-left: 20px;
 }
 
+.list-item{
+	margin: 0.2vw 0px;
+}
+
 .options-container{
 	margin-top: 20px;
 	text-align: center;
