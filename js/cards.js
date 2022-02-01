@@ -23,13 +23,17 @@ function flip(n){
 
 	var element = document.getElementById(id)
 
+	
+	
 	// console.log(element.classList.contains("flipped"));
 
 	if (!element.classList.contains("flipped")){
 		element.classList.add("flipped");
+		element.children[1].classList.add("scroll")
 	}
 	else{
 		element.classList.remove("flipped");
+		setTimeout(() => element.children[1].classList.remove("scroll"),200)
 	}
 
 	
@@ -138,7 +142,7 @@ function createCard(n,obj){
 
 	var card_back = document.createElement('div');
 	card_back.classList.add("card-back");
-	card_back.classList.add("scroll");
+	// card_back.classList.add("scroll");
 
 	card_back.appendChild(header);
 	card_back.appendChild(text);
