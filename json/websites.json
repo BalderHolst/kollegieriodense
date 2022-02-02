@@ -39,5 +39,9 @@
 	"link": "https://www.studiebolig-odense.dk/departments/310",
 	"decoding_function": "decode_studiebolig_odense"
 
+},
+{
+	"link": "https://www.studiebolig-odense.dk/departments/2204?language=en",
+	"decoding_function": "decode_studiebolig_odense"
 }
 ]

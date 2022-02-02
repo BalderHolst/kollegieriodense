@@ -15,6 +15,7 @@ function select(n){
 
 
 	show_floorplan(n);
+	show_table(n);
 	show_selector(n);
 }
 
@@ -29,8 +30,20 @@ function show_floorplan(n){
 	if(element != null) element.classList.add('show-floorplan');	
 }
 
+function show_table(n){
+	var old_selection = document.getElementsByClassName('show-table'); //find alle tags der er "shown"
+	if(old_selection.length > 0) old_selection[0].classList.remove('show-table'); //Hvis den finder et, så "unshower" den det
+
+	id = "table" + n;
+	element = document.getElementById(id);
+	
+	if(element != null) element.classList.add('show-table');	
+	
+	// console.log(n);
+}
+
 function show_selector(n){
-	console.log("showing selector " + n);
+	// console.log("showing selector " + n);
 	var old_selection = document.getElementsByClassName('show-selector'); //find alle tags der er "shown"
 	if(old_selection.length > 0) {  //Hvis den finder et, så "unshower" den det
 		old_selection[0].classList.remove('show-selector');

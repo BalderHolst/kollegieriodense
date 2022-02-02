@@ -13,37 +13,41 @@ def save_file(path,text):
 		f.write(text)
 
 def makeTables(data):
-	with div(cls="table right") as d:
-		
 
-		table = [{"type":"none"},{"type": "header","text":"Toilet","cls": "header"},{"type": "header","text":"Bad","cls": "header"},{"type": "header","text":"Køkken","cls": "header"},{"type": "header","text":"Eget","cls": "header"},{"type":"checkbox","state": "empty"},{"type":"checkbox","state": "empty"},{"type":"checkbox","state": "empty"},{"type": "header","text": "Delt","cls":"header"},{"type":"checkbox","state": "empty"},{"type":"checkbox","state": "empty"},{"type":"checkbox","state": "empty"}]		
-		own_facilities = data['dorms']['own'][0]
-		if "toilet" in own_facilities:
-			table[5]['state'] = "checked"
-		if "bath" in own_facilities:
-			table[6]['state'] = "checked"
-		if "kitchen" in own_facilities:
-			table[7]['state'] = "checked"
+	with div(cls="tables") as d:
 
-		shared_facilities = data['dorms']['shared'][0]
-		if "toilet" in shared_facilities:
-			table[9]['state'] = "checked"
-		if "bath" in shared_facilities:
-			table[10]['state'] = "checked"
-		if "kitchen" in shared_facilities:
-			table[11]['state'] = "checked"
+		for i in range(len(data['dorms']['own'])):
+			
+			with div(cls="table",id=f"table{i}"):
+				table = [{"type":"none"},{"type": "header","text":"Toilet","cls": "header"},{"type": "header","text":"Bad","cls": "header"},{"type": "header","text":"Køkken","cls": "header"},{"type": "header","text":"Eget","cls": "header"},{"type":"checkbox","state": "empty"},{"type":"checkbox","state": "empty"},{"type":"checkbox","state": "empty"},{"type": "header","text": "Delt","cls":"header"},{"type":"checkbox","state": "empty"},{"type":"checkbox","state": "empty"},{"type":"checkbox","state": "empty"}]		
+				
+				own_facilities = data['dorms']['own'][i]
+				if "toilet" in own_facilities:
+					table[5]['state'] = "checked"
+				if "bath" in own_facilities:
+					table[6]['state'] = "checked"
+				if "kitchen" in own_facilities:
+					table[7]['state'] = "checked"
+
+				shared_facilities = data['dorms']['shared'][i]
+				if "toilet" in shared_facilities:
+					table[9]['state'] = "checked"
+				if "bath" in shared_facilities:
+					table[10]['state'] = "checked"
+				if "kitchen" in shared_facilities:
+					table[11]['state'] = "checked"
 
 
-		for element in table:
-			if(element['type'] == "header"):
-				div(element['text'],cls=element['cls'])
-			elif(element['type'] == "checkbox"):
-				if(element['state'] == "checked"):
-					div("x",cls="checkmark")
-				else:
-					div()
-			else:
-				div()
+				for element in table:
+					if(element['type'] == "header"):
+						div(element['text'],cls=element['cls'])
+					elif(element['type'] == "checkbox"):
+						if(element['state'] == "checked"):
+							div("x",cls="checkmark")
+						else:
+							div()
+					else:
+						div()
 	return(d)
 
 def create_page(data):
@@ -79,7 +83,7 @@ def create_page(data):
 			
 			with div(cls="cols"):
 
-				with ul(cls="list left"):
+				with ul(cls="list"):
 					for item in data['facilities']:
 						li(item,cls="list-item")
 				
@@ -87,7 +91,7 @@ def create_page(data):
 				# with div(cls="right"):
 
 
-				with div(cls="floorplans right"):
+				with div(cls="floorplans"):
 					if(len(data['dorms']['floorplans']) > 0):
 						for i,floorplan in enumerate(data['dorms']['floorplans']):
 							img(src=floorplan,id=f"img{i}",cls="floorplan")
