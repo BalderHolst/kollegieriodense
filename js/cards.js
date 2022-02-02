@@ -138,8 +138,11 @@ function createCard(n,obj){
 
 
 	var text = document.createElement('div');
-	text.classList.add("facilities");
-	text.appendChild(makeHTMLList(obj.facilities));
+
+	if(obj.facilities){
+		text.classList.add("facilities");
+		text.appendChild(makeHTMLList(obj.facilities));
+	}
 
 	var card_back = document.createElement('div');
 	card_back.classList.add("card-back");
