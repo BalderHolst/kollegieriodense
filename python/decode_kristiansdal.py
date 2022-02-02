@@ -89,7 +89,7 @@ def decode_kristiansdal(website):
 	data['dorms']['fee'] = get_fee(soup)
 	data['dorms']['rooms'] = get_rooms(soup)
 	data['dorms']['floorplans'] = get_floorplans(soup)
-	data['dorms']['locations'], data['links'] = get_locations_and_links(soup)
+	data['dorms']['locations'], data['dorms']['links'] = get_locations_and_links(soup)
 
 	
 

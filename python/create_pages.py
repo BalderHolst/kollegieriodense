@@ -83,9 +83,11 @@ def create_page(data):
 			
 			with div(cls="cols"):
 
-				with ul(cls="list"):
-					for item in data['facilities']:
-						li(item,cls="list-item")
+				if('facilities' in data.keys()):
+					with ul(cls="list"):
+						for item in data['facilities']:
+							li(item,cls="list-item")
+
 				
 
 				# with div(cls="right"):
@@ -104,7 +106,8 @@ def create_page(data):
 
 				div("Nedenfor kan du vælge et bestemt værelse, og se dets faciliteter og grundplan",cls="how-to")
 
-				makeTables(data)
+				if('own' in data.keys()):
+					makeTables(data)
 
 			with div(cls="options-container"):
 				
@@ -113,7 +116,11 @@ def create_page(data):
 						div("Størrelse",cls="header")
 						div("Værrelser",cls="header")
 						div("Leje",cls="header")
-						div("Depositum",cls="header")
+
+						if('depositum' in data['dorms'].keys()):
+							div("Depositum",cls="header")
+						elif('fee' in data['dorms'].keys()):
+							div("Depositum",cls="header")
 
 				for i in range(len(data['dorms']['locations'])):
 					with div(id=f"option{i}",onclick=f"select({i});",cls="option"):
@@ -121,7 +128,14 @@ def create_page(data):
 						div(data['dorms']['space'][i] + "m2",cls="space")
 						div(data['dorms']['rooms'][i],cls="rooms")
 						div(data['dorms']['prices'][i] + "kr",cls="prices")
-						div(data['dorms']['depositum'][i] + "kr",cls="depositum")
+						
+						if('depositum' in data['dorms'].keys()):
+							div(data['dorms']['depositum'][i] + "kr",cls="depositum")
+						elif('fee' in data['dorms'].keys()):
+							div(data['dorms']['fee'][i] + "kr",cls="depositum")
+
+						
+					
 						a("Til side",id=f"selector{i}",cls="selector",href=data['dorms']['links'][i],target = "_blank")
 
 
