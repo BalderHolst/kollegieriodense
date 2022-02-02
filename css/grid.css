@@ -5,16 +5,18 @@
 }
 
 
-
-
 #grid-container {
 	margin: 0px var(--space);
 	display: grid;
-	grid-template-columns: repeat(var(--rows), calc(100% / var(--rows))); /*hvor mange rækker skal der være?*/
+	
+	/* grid-template-columns: repeat(auto-fill,minmax(150px,calc(100%/var(--rows)))); */
+	
+	grid-template-columns: repeat(var(--rows), calc(100% / var(--rows))); hvor mange rækker skal der være?
+
 }
 
 .card {
-
+	
 	height: 320px;
 	/*boks*/
 	background-color: #FFFFFF;
