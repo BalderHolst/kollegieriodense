@@ -87,7 +87,7 @@ function createCard(n,obj){
 	 //  front
 	 var img = document.createElement('img');
 	 if(obj.img != undefined){ 
-	 	img.setAttribute('src', obj.img);
+	 	img.setAttribute('src', "img/" + obj.img);
 	 }
 	 else {
 	 	img.setAttribute('src', "img/no_image.jpg")
