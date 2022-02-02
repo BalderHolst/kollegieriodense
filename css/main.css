@@ -7,7 +7,7 @@
 	--extra-space: 1vw;
 	--corner-radius: 4px;
 	--shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	--button-hover-delay: 200ms;
+	--general-delay: 200ms;
 	--button-hover-color: rgba(50, 50, 50, 0.1);
 }
 
@@ -65,7 +65,7 @@ header a{
 	border-radius: 5px;
 	text-decoration: none;
 	color:black;
-	transition: var(--button-hover-delay);
+	transition: var(--general-delay);
 }
 
 .nav:hover{

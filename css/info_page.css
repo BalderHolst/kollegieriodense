@@ -39,28 +39,45 @@ body{
 	padding: 10px 0px;
 	border-bottom: 2px solid black;
 	display: grid;
-	grid-template-columns: 30% repeat(4, calc(70%/4)) 0;
+	grid-template-columns: 40% repeat(4, calc(60%/4)) 0;
 
 }
 
 
 
 .option{
+	font-size: 12px;
 	position: relative;
 	cursor: pointer;
-	transition: var(--button-hover-delay);
+	transition: var(--general-delay);
 }
 
 .option:hover{
 	background-color: var(--button-hover-color);
 }
+.selected:hover{
+	background-color: #9dccdbAA;
+}
 
-.selector{
+.selected{
+	/*color: red;*/
+	background-color: var(--accent-color);
+}
+
+
+/*Til side*/
+.selector{ 
+	opacity: 0;
+	transition: var(--general-delay);
+
+	cursor: default	;
+
+
 	border: 1px solid gray;
 
 	background-color: var(--accent-color);
 	border-radius: var(--corner-radius);
-	padding: 0.7vw 1vw;
+	padding: 0.5em 1em;
 	position: absolute;
 	text-decoration: none;
 	color: black;
@@ -68,8 +85,14 @@ body{
 
 	box-shadow: var(--shadow);
 
-	top: 0.37vw;
+
+	margin: 0.2em 0px;
+	/*top: 0.7vw;*/
 	right: -140px;
+}
+.selector.show-selector{
+	cursor: pointer;
+	opacity: 1;
 }
 
 .locations{
@@ -79,19 +102,32 @@ body{
 .cols{
 	display: grid;
 	grid-template-columns: 50% 50%;
+	/*grid-template-rows: max(100px,);*/
 }
 
 .floorplans{
+	/*overflow: contain;*/
 	position: relative;
+	border: 2px solid var(--accent-color);
+	border-radius: var(--corner-radius);
 }
 
 .floorplans img{
 	position: absolute;
 	top: 0;
 
-
 	max-width: 100%;
 	max-height: 100%;
+}
+.floorplan{
+	z-index: 0;
+	opacity: 0;
+	transition: var(--general-delay);
+}
+.floorplan.show-floorplan{
+	/*border: 3px solid red;*/
+	opacity: 1;
+	z-index: 100;
 }
 
 
@@ -110,17 +146,13 @@ body{
 
 }
 
-.table {
 
+
+.table {
 	font-size: 11px;
 	text-align: center;
 	
-
-
 	background-color: var(--accent-color);
-	/*box-shadow: var(--shadow);*/
-	/*border: var(--table-border);*/
-	
 
 	display: grid;
 
@@ -154,14 +186,16 @@ body{
   	border-right: var(--table-border);
 }
 
+.no-display{
+	display: none;
+}
 
 
-
-img.checkmark{
+/*img.checkmark{
 	top: -1px;
 	object-fit: contain;
 	height: 100%;
 	width: 100%;
 	padding: 2px;
 
-}
+}*/

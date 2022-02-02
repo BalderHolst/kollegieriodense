@@ -1,6 +1,6 @@
 [
   {
-    "name": "Blangstedg\\u00e5rdkollegiet",
+    "name": "Blangstedg\u00e5rdkollegiet",
     "link": "https://www.studiebolig-odense.dk/departments/314",
     "img": "img/blangstedgaardkollegiet.jpg",
     "decoding_function": "decode_studiebolig_odense"
@@ -12,7 +12,7 @@
     "decoding_function": "decode_studiebolig_odense"
   },
   {
-    "name": "H. C. \\u00d8rsteds Kollegiet",
+    "name": "H. C. \u00d8rsteds Kollegiet",
     "link": "https://www.studiebolig-odense.dk/departments/4301?page=1&language=da",
     "img": "img/H.C. Orstedkollegiet.jpg",
     "decoding_function": "decode_studiebolig_odense"
@@ -24,7 +24,7 @@
     "decoding_function": "decode_studiebolig_odense"
   },
   {
-    "name": "J. B. Winsl\\u00f8wkollegiet",
+    "name": "J. B. Winsl\u00f8wkollegiet",
     "link": "https://www.studiebolig-odense.dk/departments/304",
     "img": "img/jbw.jpg",
     "decoding_function": "decode_studiebolig_odense"
@@ -54,7 +54,7 @@
     "decoding_function": "decode_studiebolig_odense"
   },
   {
-    "name": "\\u00c5l\\u00f8kkekollegiet",
+    "name": "\u00c5l\u00f8kkekollegiet",
     "link": "https://www.studiebolig-odense.dk/departments/310",
     
     "decoding_function": "decode_studiebolig_odense"

@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link href="../../css/main.css" rel="stylesheet">
     <link href="../../css/info_page.css" rel="stylesheet">
+    <script defer="defer" src="../../js/info_page.js"></script>
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin="crossorigin" href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&amp;display=swap" rel="stylesheet">
@@ -24,7 +25,9 @@
       <h2 class="header">Kaj Munk Kollegiet</h2>
       <div class="cols">
         <ul class="list left"></ul>
-        <div class="floorplans right"></div>
+        <div class="floorplans right">
+          <img src="../../img/no_image.jpg">
+        </div>
         <div class="how-to">Nedenfor kan du vælge et bestemt værelse, og se dets faciliteter og grundplan</div>
         <div class="table right">
           <div></div>
@@ -49,7 +52,7 @@
           <div class="header">Leje</div>
           <div class="header">Depositum</div>
         </div>
-        <div class="option" id="option0">
+        <div class="option" id="option0" onclick="select(0);">
           <div class="locations">Hjallesegade 5260, Odense S Kaj Munk Kollegiet</div>
           <div class="space">21,0m2</div>
           <div class="rooms">1</div>
@@ -57,7 +60,7 @@
           <div class="depositum">4,503kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/4001010040010105908" id="selector0" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option1">
+        <div class="option" id="option1" onclick="select(1);">
           <div class="locations">Hjallesegade 5260, Odense S Kaj Munk Kollegiet</div>
           <div class="space">42,0m2</div>
           <div class="rooms">2</div>

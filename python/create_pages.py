@@ -23,7 +23,8 @@ def create_page(data):
 
 		link(rel="stylesheet",href="../../css/main.css")
 		link(rel="stylesheet",href="../../css/info_page.css")
-		# script(src="js/cards.js",defer=True)
+		
+		script(src="../../js/info_page.js",defer=True)
 
 
 		link(rel="preconnect",href="https://fonts.googleapis.com")
@@ -61,6 +62,8 @@ def create_page(data):
 							img(src=floorplan,id=f"img{i}",cls="floorplan")
 					elif 'img' in data.keys():
 						img(src=data['img'])
+					else:
+						img(src="../../img/no_image.jpg")
 
 
 				div("Nedenfor kan du vælge et bestemt værelse, og se dets faciliteter og grundplan",cls="how-to")
@@ -109,7 +112,7 @@ def create_page(data):
 						div("Depositum",cls="header")
 
 				for i in range(len(data['dorms']['locations'])):
-					with div(id=f"option{i}",cls="option"):
+					with div(id=f"option{i}",onclick=f"select({i});",cls="option"):
 						div(data['dorms']['locations'][i],cls="locations")
 						div(data['dorms']['space'][i] + "m2",cls="space")
 						div(data['dorms']['rooms'][i],cls="rooms")
@@ -128,7 +131,7 @@ def create_page(data):
 
 	save_file(f"../pages/Info-pages/{data['name']}.html",str(doc))
 	# save_file(f"../pages/Info-pages/test2.html",str(doc))
-	print(doc)
+	# print(doc)
 
 
 if __name__ == "__main__":

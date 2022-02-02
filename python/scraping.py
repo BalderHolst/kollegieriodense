@@ -9,8 +9,8 @@ from decode_studiebolig_odense import decode_studiebolig_odense
 
 
 def getWebsites():
-	s = ""
-	with open("../json/websites v.2.json",'r') as f:
+	s = ''
+	with open('../json/websites v.2.json','r',encoding='utf-8') as f:
 		s = json.load(f)
 	return(s)
 
@@ -27,13 +27,13 @@ def getPrices(website,soup):
 	for tag in tags:
 		s = tag.string
 		s = s[13:s.index(',')]
-		s = s.replace(".",",")
+		s = s.replace('.',',')
 		prices.append(s)
 
 	return(prices)
 
 def getSpace(website,soup):
-	tags = soup.find_all(class_ = "views-field-BBRARE")[1:]
+	tags = soup.find_all(class_ = 'views-field-BBRARE')[1:]
 
 	datapoints = []
 
@@ -48,10 +48,10 @@ def getSpace(website,soup):
 
 def decode(website):
 
-	soup = get_soup(website["link"])
-	fun = website["decoding_function"]
+	soup = get_soup(website['link'])
+	fun = website['decoding_function']
 
-	# print("using deciding function: " + fun)
+	# print('using deciding function: ' + fun)
 
 	method_name = fun # set by the command line options
 	
@@ -59,7 +59,7 @@ def decode(website):
 	possibles.update(locals())
 	method = possibles.get(method_name)
 	if not method:
-	     raise NotImplementedError("Method %s not implemented" % method_name)
+	     raise NotImplementedError('Method %s not implemented' % method_name)
 	
 	return(method(soup))
 
@@ -70,17 +70,20 @@ def do_it():
 	data = []
 
 	for website in websites:
-		print(f"Scraping: {website['link']}")
+		print(f"Scraping: {website['name']}\t link:{website['link']}")
+
 
 		data.append(website | decode(website))
 
-	with open("../json/scraped.json",'w') as f:
+
+
+	with open('../json/scraped.json','w') as f:
 		json.dump(data,f)
 
-	encoded_text = ""
+	encoded_text = ''
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
 	do_it()
 
 

@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link href="../../css/main.css" rel="stylesheet">
     <link href="../../css/info_page.css" rel="stylesheet">
+    <script defer="defer" src="../../js/info_page.js"></script>
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin="crossorigin" href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&amp;display=swap" rel="stylesheet">
@@ -78,7 +79,7 @@
           <div class="header">Leje</div>
           <div class="header">Depositum</div>
         </div>
-        <div class="option" id="option0">
+        <div class="option" id="option0" onclick="select(0);">
           <div class="locations">Sdr. Boulevard 5000, Odense C J. B. Winsløwkollegiet</div>
           <div class="space">38,1m2</div>
           <div class="rooms">1</div>
@@ -86,7 +87,7 @@
           <div class="depositum">9,655kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0304010703040102901" id="selector0" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option1">
+        <div class="option" id="option1" onclick="select(1);">
           <div class="locations">Sdr. Boulevard 5000, Odense C J. B. Winsløwkollegiet</div>
           <div class="space">39,8m2</div>
           <div class="rooms">1</div>
@@ -94,7 +95,7 @@
           <div class="depositum">10,137kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0304010303040102901" id="selector1" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option2">
+        <div class="option" id="option2" onclick="select(2);">
           <div class="locations">Sdr. Boulevard 5000, Odense C J. B. Winsløwkollegiet</div>
           <div class="space">33,1m2</div>
           <div class="rooms">1</div>
@@ -102,7 +103,7 @@
           <div class="depositum">11,103kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0304011003040102901" id="selector2" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option3">
+        <div class="option" id="option3" onclick="select(3);">
           <div class="locations">Sdr. Boulevard 5000, Odense C J. B. Winsløwkollegiet</div>
           <div class="space">32,4m2</div>
           <div class="rooms">1</div>
@@ -110,7 +111,7 @@
           <div class="depositum">11,586kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0304011103040102901" id="selector3" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option4">
+        <div class="option" id="option4" onclick="select(4);">
           <div class="locations">Sdr. Boulevard 5000, Odense C J. B. Winsløwkollegiet</div>
           <div class="space">47,8m2</div>
           <div class="rooms">1</div>
@@ -118,7 +119,7 @@
           <div class="depositum">11,103kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0304010603040102901" id="selector4" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option5">
+        <div class="option" id="option5" onclick="select(5);">
           <div class="locations">Sdr. Boulevard 5000, Odense C J. B. Winsløwkollegiet</div>
           <div class="space">48,0m2</div>
           <div class="rooms">1</div>
@@ -126,7 +127,7 @@
           <div class="depositum">11,103kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0304010903040102901" id="selector5" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option6">
+        <div class="option" id="option6" onclick="select(6);">
           <div class="locations">Sdr. Boulevard 5000, Odense C J. B. Winsløwkollegiet</div>
           <div class="space">42,6m2</div>
           <div class="rooms">1</div>
@@ -134,7 +135,7 @@
           <div class="depositum">13,269kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0304011203040102901" id="selector6" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option7">
+        <div class="option" id="option7" onclick="select(7);">
           <div class="locations">Sdr. Boulevard 5000, Odense C J. B. Winsløwkollegiet</div>
           <div class="space">49,9m2</div>
           <div class="rooms">1</div>
@@ -142,7 +143,7 @@
           <div class="depositum">11,103kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0304010503040102901" id="selector7" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option8">
+        <div class="option" id="option8" onclick="select(8);">
           <div class="locations">Sdr. Boulevard 5000, Odense C J. B. Winsløwkollegiet</div>
           <div class="space">49,2m2</div>
           <div class="rooms">1</div>
@@ -150,7 +151,7 @@
           <div class="depositum">11,103kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0304010803040102901" id="selector8" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option9">
+        <div class="option" id="option9" onclick="select(9);">
           <div class="locations">Sdr. Boulevard 5000, Odense C J. B. Winsløwkollegiet</div>
           <div class="space">49,7m2</div>
           <div class="rooms">1</div>
@@ -158,7 +159,7 @@
           <div class="depositum">11,103kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0304010103040102901" id="selector9" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option10">
+        <div class="option" id="option10" onclick="select(10);">
           <div class="locations">Sdr. Boulevard 5000, Odense C J. B. Winsløwkollegiet</div>
           <div class="space">49,8m2</div>
           <div class="rooms">1</div>
@@ -166,7 +167,7 @@
           <div class="depositum">11,103kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0304010403040102901" id="selector10" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option11">
+        <div class="option" id="option11" onclick="select(11);">
           <div class="locations">Sdr. Boulevard 5000, Odense C J. B. Winsløwkollegiet</div>
           <div class="space">49,7m2</div>
           <div class="rooms">1</div>
@@ -174,7 +175,7 @@
           <div class="depositum">11,103kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0304010203040102901" id="selector11" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option12">
+        <div class="option" id="option12" onclick="select(12);">
           <div class="locations">Sdr. Boulevard 5000, Odense C J. B. Winsløwkollegiet</div>
           <div class="space">43,9m2</div>
           <div class="rooms">1</div>

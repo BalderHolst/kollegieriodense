@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link href="../../css/main.css" rel="stylesheet">
     <link href="../../css/info_page.css" rel="stylesheet">
+    <script defer="defer" src="../../js/info_page.js"></script>
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin="crossorigin" href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&amp;display=swap" rel="stylesheet">
@@ -88,7 +89,7 @@
           <div class="header">Leje</div>
           <div class="header">Depositum</div>
         </div>
-        <div class="option" id="option0">
+        <div class="option" id="option0" onclick="select(0);">
           <div class="locations">Østre Stationsvej 5000, Odense C Lindekollegiet</div>
           <div class="space">34,0m2</div>
           <div class="rooms">1</div>
@@ -96,7 +97,7 @@
           <div class="depositum">6,222kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0312010803120102901" id="selector0" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option1">
+        <div class="option" id="option1" onclick="select(1);">
           <div class="locations">Østre Stationsvej 5000, Odense C Lindekollegiet</div>
           <div class="space">36,0m2</div>
           <div class="rooms">1</div>
@@ -104,7 +105,7 @@
           <div class="depositum">6,225kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0312010503120102901" id="selector1" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option2">
+        <div class="option" id="option2" onclick="select(2);">
           <div class="locations">Østre Stationsvej 5000, Odense C Lindekollegiet</div>
           <div class="space">33,0m2</div>
           <div class="rooms">1</div>
@@ -112,7 +113,7 @@
           <div class="depositum">6,678kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0312011403120102901" id="selector2" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option3">
+        <div class="option" id="option3" onclick="select(3);">
           <div class="locations">Østre Stationsvej 5000, Odense C Lindekollegiet</div>
           <div class="space">34,0m2</div>
           <div class="rooms">1</div>
@@ -120,7 +121,7 @@
           <div class="depositum">6,753kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0312011003120102901" id="selector3" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option4">
+        <div class="option" id="option4" onclick="select(4);">
           <div class="locations">Østre Stationsvej 5000, Odense C Lindekollegiet</div>
           <div class="space">33,0m2</div>
           <div class="rooms">1</div>
@@ -128,7 +129,7 @@
           <div class="depositum">7,128kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0312011603120102901" id="selector4" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option5">
+        <div class="option" id="option5" onclick="select(5);">
           <div class="locations">Østre Stationsvej 5000, Odense C Lindekollegiet</div>
           <div class="space">36,0m2</div>
           <div class="rooms">1</div>
@@ -136,7 +137,7 @@
           <div class="depositum">7,401kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0312010403120102901" id="selector5" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option6">
+        <div class="option" id="option6" onclick="select(6);">
           <div class="locations">Østre Stationsvej 5000, Odense C Lindekollegiet</div>
           <div class="space">43,0m2</div>
           <div class="rooms">1</div>
@@ -144,7 +145,7 @@
           <div class="depositum">7,464kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0312011103120102901" id="selector6" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option7">
+        <div class="option" id="option7" onclick="select(7);">
           <div class="locations">Østre Stationsvej 5000, Odense C Lindekollegiet</div>
           <div class="space">41,0m2</div>
           <div class="rooms">1</div>
@@ -152,7 +153,7 @@
           <div class="depositum">8,193kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0312011203120102901" id="selector7" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option8">
+        <div class="option" id="option8" onclick="select(8);">
           <div class="locations">Østre Stationsvej 5000, Odense C Lindekollegiet</div>
           <div class="space">44,0m2</div>
           <div class="rooms">1</div>
@@ -160,7 +161,7 @@
           <div class="depositum">8,301kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0312010103120102901" id="selector8" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option9">
+        <div class="option" id="option9" onclick="select(9);">
           <div class="locations">Østre Stationsvej 5000, Odense C Lindekollegiet</div>
           <div class="space">40,0m2</div>
           <div class="rooms">1</div>
@@ -168,7 +169,7 @@
           <div class="depositum">8,370kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0312010203120102901" id="selector9" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option10">
+        <div class="option" id="option10" onclick="select(10);">
           <div class="locations">Østre Stationsvej 5000, Odense C Lindekollegiet</div>
           <div class="space">43,0m2</div>
           <div class="rooms">1</div>
@@ -176,7 +177,7 @@
           <div class="depositum">8,397kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0312010303120102901" id="selector10" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option11">
+        <div class="option" id="option11" onclick="select(11);">
           <div class="locations">Østre Stationsvej 5000, Odense C Lindekollegiet</div>
           <div class="space">44,0m2</div>
           <div class="rooms">1</div>
@@ -184,7 +185,7 @@
           <div class="depositum">8,517kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0312012503120102901" id="selector11" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option12">
+        <div class="option" id="option12" onclick="select(12);">
           <div class="locations">Østre Stationsvej 5000, Odense C Lindekollegiet</div>
           <div class="space">43,0m2</div>
           <div class="rooms">1</div>
@@ -192,7 +193,7 @@
           <div class="depositum">8,652kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0312010703120102901" id="selector12" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option13">
+        <div class="option" id="option13" onclick="select(13);">
           <div class="locations">Østre Stationsvej 5000, Odense C Lindekollegiet</div>
           <div class="space">42,0m2</div>
           <div class="rooms">1</div>
@@ -200,7 +201,7 @@
           <div class="depositum">8,928kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0312011303120102901" id="selector13" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option14">
+        <div class="option" id="option14" onclick="select(14);">
           <div class="locations">Østre Stationsvej 5000, Odense C Lindekollegiet</div>
           <div class="space">36,0m2</div>
           <div class="rooms">1</div>
@@ -208,7 +209,7 @@
           <div class="depositum">8,982kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0312011503120102901" id="selector14" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option15">
+        <div class="option" id="option15" onclick="select(15);">
           <div class="locations">Østre Stationsvej 5000, Odense C Lindekollegiet</div>
           <div class="space">42,0m2</div>
           <div class="rooms">1</div>
@@ -216,7 +217,7 @@
           <div class="depositum">9,108kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0312010603120102901" id="selector15" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option16">
+        <div class="option" id="option16" onclick="select(16);">
           <div class="locations">Østre Stationsvej 5000, Odense C Lindekollegiet</div>
           <div class="space">33,0m2</div>
           <div class="rooms">2</div>
@@ -224,7 +225,7 @@
           <div class="depositum">9,216kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0312022303120102901" id="selector16" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option17">
+        <div class="option" id="option17" onclick="select(17);">
           <div class="locations">Østre Stationsvej 5000, Odense C Lindekollegiet</div>
           <div class="space">34,0m2</div>
           <div class="rooms">1</div>
@@ -232,7 +233,7 @@
           <div class="depositum">9,312kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0312011903120102901" id="selector17" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option18">
+        <div class="option" id="option18" onclick="select(18);">
           <div class="locations">Østre Stationsvej 5000, Odense C Lindekollegiet</div>
           <div class="space">34,0m2</div>
           <div class="rooms">2</div>
@@ -240,7 +241,7 @@
           <div class="depositum">9,576kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0312022003120102901" id="selector18" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option19">
+        <div class="option" id="option19" onclick="select(19);">
           <div class="locations">Østre Stationsvej 5000, Odense C Lindekollegiet</div>
           <div class="space">37,0m2</div>
           <div class="rooms">1</div>
@@ -248,7 +249,7 @@
           <div class="depositum">10,014kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0312010903120102901" id="selector19" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option20">
+        <div class="option" id="option20" onclick="select(20);">
           <div class="locations">Østre Stationsvej 5000, Odense C Lindekollegiet</div>
           <div class="space">54,0m2</div>
           <div class="rooms">2</div>
@@ -256,7 +257,7 @@
           <div class="depositum">10,755kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0312022203120102901" id="selector20" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option21">
+        <div class="option" id="option21" onclick="select(21);">
           <div class="locations">Østre Stationsvej 5000, Odense C Lindekollegiet</div>
           <div class="space">35,0m2</div>
           <div class="rooms">2</div>
@@ -264,7 +265,7 @@
           <div class="depositum">10,959kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0312022403120102901" id="selector21" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option22">
+        <div class="option" id="option22" onclick="select(22);">
           <div class="locations">Østre Stationsvej 5000, Odense C Lindekollegiet</div>
           <div class="space">36,0m2</div>
           <div class="rooms">1</div>
@@ -272,7 +273,7 @@
           <div class="depositum">11,139kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0312012103120102901" id="selector22" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option23">
+        <div class="option" id="option23" onclick="select(23);">
           <div class="locations">Østre Stationsvej 5000, Odense C Lindekollegiet</div>
           <div class="space">36,0m2</div>
           <div class="rooms">2</div>
@@ -280,7 +281,7 @@
           <div class="depositum">11,265kr</div>
           <a class="selector" href="https://www.studiebolig-odense.dk/apartments/0312022103120102901" id="selector23" target="_blank">Til side</a>
         </div>
-        <div class="option" id="option24">
+        <div class="option" id="option24" onclick="select(24);">
           <div class="locations">Østre Stationsvej 5000, Odense C Lindekollegiet</div>
           <div class="space">55,0m2</div>
           <div class="rooms">2</div>
