@@ -12,8 +12,39 @@ def save_file(path,text):
 	with open(path,'w',encoding='utf-8') as f:
 		f.write(text)
 
+def makeTables(data):
+	with div(cls="table right") as d:
+		
+
+		table = [{"type":"none"},{"type": "header","text":"Toilet","cls": "header"},{"type": "header","text":"Bad","cls": "header"},{"type": "header","text":"Køkken","cls": "header"},{"type": "header","text":"Eget","cls": "header"},{"type":"checkbox","state": "empty"},{"type":"checkbox","state": "empty"},{"type":"checkbox","state": "empty"},{"type": "header","text": "Delt","cls":"header"},{"type":"checkbox","state": "empty"},{"type":"checkbox","state": "empty"},{"type":"checkbox","state": "empty"}]		
+		own_facilities = data['dorms']['own'][0]
+		if "toilet" in own_facilities:
+			table[5]['state'] = "checked"
+		if "bath" in own_facilities:
+			table[6]['state'] = "checked"
+		if "kitchen" in own_facilities:
+			table[7]['state'] = "checked"
+
+		shared_facilities = data['dorms']['shared'][0]
+		if "toilet" in shared_facilities:
+			table[9]['state'] = "checked"
+		if "bath" in shared_facilities:
+			table[10]['state'] = "checked"
+		if "kitchen" in shared_facilities:
+			table[11]['state'] = "checked"
 
 
+		for element in table:
+			if(element['type'] == "header"):
+				div(element['text'],cls=element['cls'])
+			elif(element['type'] == "checkbox"):
+				if(element['state'] == "checked"):
+					div("x",cls="checkmark")
+				else:
+					div()
+			else:
+				div()
+	return(d)
 
 def create_page(data):
 	doc = dominate.document(title = data['name']) 
@@ -68,39 +99,7 @@ def create_page(data):
 
 				div("Nedenfor kan du vælge et bestemt værelse, og se dets faciliteter og grundplan",cls="how-to")
 
-
-				with div(cls="table right"):
-					table = [{"type":"none"},{"type": "header","text":"Toilet","cls": "header"},{"type": "header","text":"Bad","cls": "header"},{"type": "header","text":"Køkken","cls": "header"},{"type": "header","text":"Eget","cls": "header"},{"type":"checkbox","state": "empty"},{"type":"checkbox","state": "empty"},{"type":"checkbox","state": "empty"},{"type": "header","text": "Delt","cls":"header"},{"type":"checkbox","state": "empty"},{"type":"checkbox","state": "empty"},{"type":"checkbox","state": "empty"}]
-
-					
-					own_facilities = data['dorms']['own'][0]
-					if "toilet" in own_facilities:
-						table[5]['state'] = "checked"
-					if "bath" in own_facilities:
-						table[6]['state'] = "checked"
-					if "kitchen" in own_facilities:
-						table[7]['state'] = "checked"
-
-					shared_facilities = data['dorms']['shared'][0]
-					if "toilet" in shared_facilities:
-						table[9]['state'] = "checked"
-					if "bath" in shared_facilities:
-						table[10]['state'] = "checked"
-					if "kitchen" in shared_facilities:
-						table[11]['state'] = "checked"
-
-
-					for element in table:
-						# print(element)
-						if(element['type'] == "header"):
-							div(element['text'],cls=element['cls'])
-						elif(element['type'] == "checkbox"):
-							if(element['state'] == "checked"):
-								div("x",cls="checkmark")
-							else:
-								div()
-						else:
-							div()
+				makeTables(data)
 
 			with div(cls="options-container"):
 				
