@@ -1,18 +1,16 @@
 from bs4 import BeautifulSoup
+import requests
 
+from decode_utils import *
+
+def get_soup(url):
+	return(BeautifulSoup(requests.get(url).text,'lxml'))
 
 def linear_search(array, to_find):
 	for i in range(0, len(array)):
 		if array[i] == to_find:
 			return i
 	return -1
-
-def make_singlespaced(s):
-	while(s.find("  ") != -1):
-		index = s.find("  ")
-		s = s[:index] + s[index + 1:]
-
-	return(s)
 
 def get_name(soup):
 	try:
@@ -167,7 +165,9 @@ def get_own_and_shared(soup):
 	return(own,shared)
 
 
-def decode_studiebolig_odense(soup):
+def decode_studiebolig_odense(website):
+	soup = get_soup(website['link'])
+
 	data = {}
 
 	data['name'] = get_name(soup)

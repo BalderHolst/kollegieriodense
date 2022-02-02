@@ -92,13 +92,14 @@ def create_page(data):
 
 
 				with div(cls="floorplans"):
-					if(len(data['dorms']['floorplans']) > 0):
-						for i,floorplan in enumerate(data['dorms']['floorplans']):
-							img(src=floorplan,id=f"img{i}",cls="floorplan")
-					elif 'img' in data.keys():
-						img(src=data['img'])
-					else:
-						img(src="../../img/no_image.jpg")
+
+						if(len(data['dorms']['floorplans']) > 0):
+							for i,floorplan in enumerate(data['dorms']['floorplans']):
+								a(img(src=floorplan,id=f"img{i}",cls="floorplan"),href=floorplan,target="_blank")
+						elif 'img' in data.keys():
+							img(src=data['img'])
+						else:
+							img(src="../../img/no_image.jpg")
 
 
 				div("Nedenfor kan du vælge et bestemt værelse, og se dets faciliteter og grundplan",cls="how-to")

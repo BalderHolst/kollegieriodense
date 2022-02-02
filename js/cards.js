@@ -45,6 +45,7 @@ function flip(n){
 function createCards(){
 	getData().then((data) => {
 			// console.log(data)
+			console.log(data);
 			createCardGrid(data);
 		})	
 }

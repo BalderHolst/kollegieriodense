@@ -1,16 +1,18 @@
-# mangler: Harekæret, Landø Kollegiet, Langelinie Kollegiet, Munkegade Kollegiet?/munke mose park, Pjentedamskollegiet, https://www.kollegieboligselskabet.dk/vores-afdelinger/rasmus-raskkollegiet/, Skt. Jørgenskollegiet, Thomas B. Thriges Kollegium
+# mangler: Munkegade Kollegiet?/munke mose park, Pjentedamskollegiet, https://www.kollegieboligselskabet.dk/vores-afdelinger/rasmus-raskkollegiet/, Skt. Jørgenskollegiet, Thomas B. Thriges Kollegium
 
 from bs4 import BeautifulSoup
 import requests
 import json
 
-from decode_studiebolig_odense import decode_studiebolig_odense
+from decode_studiebolig_odense import *
+from decode_kristiansdal import *
+from decode_rasmus_rask import *
 
 
 
 def getWebsites():
 	s = ''
-	with open('../json/websites v.2.json','r',encoding='utf-8') as f:
+	with open('../json/websites.json','r',encoding='utf-8') as f:
 		s = json.load(f)
 	return(s)
 
@@ -48,7 +50,6 @@ def getSpace(website,soup):
 
 def decode(website):
 
-	soup = get_soup(website['link'])
 	fun = website['decoding_function']
 
 	# print('using deciding function: ' + fun)
@@ -61,7 +62,7 @@ def decode(website):
 	if not method:
 	     raise NotImplementedError('Method %s not implemented' % method_name)
 	
-	return(method(soup))
+	return(method(website))
 
 
 def do_it():
@@ -70,7 +71,7 @@ def do_it():
 	data = []
 
 	for website in websites:
-		print(f"Scraping: {website['name']}\t link:{website['link']}")
+		print(f"Scraping: {website['name']}")
 
 
 		data.append(website | decode(website))

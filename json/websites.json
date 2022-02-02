@@ -1,47 +1,94 @@
 [
-{
-	"link": "https://www.studiebolig-odense.dk/departments/314",
-	"decoding_function": "decode_studiebolig_odense"
-},
-{
-	"link": "https://www.studiebolig-odense.dk/departments/307",
-	"decoding_function": "decode_studiebolig_odense"
-},
-{
-	"link": "https://www.studiebolig-odense.dk/departments/4301?page=1&language=da",
-	"decoding_function": "decode_studiebolig_odense"
-},
-{
-	"link": "https://studiebolig-odense.dk/departments/311",
-	"decoding_function": "decode_studiebolig_odense"
-},
-{
-	"link": "https://www.studiebolig-odense.dk/departments/304",
-	"decoding_function": "decode_studiebolig_odense"
-},
-{
-	"link": "https://www.studiebolig-odense.dk/departments/4001",
-	"decoding_function": "decode_studiebolig_odense"
-},
-{
-	"link": "https://www.studiebolig-odense.dk/departments/312",
-	"decoding_function": "decode_studiebolig_odense"
-},
-{
-	"link": "https://www.studiebolig-odense.dk/departments/313",
-	"decoding_function": "decode_studiebolig_odense"
-},
-{
-	"link": "https://www.studiebolig-odense.dk/departments/315",
-	"decoding_function": "decode_studiebolig_odense"
-},
-{
-	"link": "https://www.studiebolig-odense.dk/departments/310",
-	"decoding_function": "decode_studiebolig_odense"
-
-},
-{
-	"link": "https://www.studiebolig-odense.dk/departments/2204?language=en",
-	"decoding_function": "decode_studiebolig_odense"
-}
+  {
+    "name": "Blangstedg\u00e5rdkollegiet",
+    "link": "https://www.studiebolig-odense.dk/departments/314",
+    "img": "blangstedgaardkollegiet.jpg",
+    "decoding_function": "decode_studiebolig_odense"
+  },
+  {
+    "name": "Carl Nielsen Kollegiet",
+    "link": "https://www.studiebolig-odense.dk/departments/307",
+    "img": "Carl_Nielsen_Kollegiet.jpg",
+    "decoding_function": "decode_studiebolig_odense"
+  },
+  {
+    "name": "H. C. \u00d8rsteds Kollegiet",
+    "link": "https://www.studiebolig-odense.dk/departments/4301?page=1&language=da",
+    "img": "H.C. Orstedkollegiet.jpg",
+    "decoding_function": "decode_studiebolig_odense"
+  },
+  {
+    "name": "Hans Tausen kollegiet",
+    "link": "https://studiebolig-odense.dk/departments/311",
+    "img": "Hans Tausen kollegiet.jpg",
+    "decoding_function": "decode_studiebolig_odense"
+  },
+  {
+    "name": "J. B. Winsl\u00f8wkollegiet",
+    "link": "https://www.studiebolig-odense.dk/departments/304",
+    "img": "jbw.jpg",
+    "decoding_function": "decode_studiebolig_odense"
+  },
+  {
+    "name": "Kaj Munk Kollegiet",
+    "link": "https://www.studiebolig-odense.dk/departments/4001",
+    
+    "decoding_function": "decode_studiebolig_odense"
+  },
+  {
+    "name": "Lindekollegiet",
+    "link": "https://www.studiebolig-odense.dk/departments/312",
+    
+    "decoding_function": "decode_studiebolig_odense"
+  },
+  {
+    "name": "Slotsgadekollegiet",
+    "link": "https://www.studiebolig-odense.dk/departments/313",
+    
+    "decoding_function": "decode_studiebolig_odense"
+  },
+  {
+    "name": "Tornbjergkollegiet",
+    "link": "https://www.studiebolig-odense.dk/departments/315",
+    "img": "Tornbjergkollegiet.jpg", 
+    "decoding_function": "decode_studiebolig_odense"
+  },
+  {
+    "name": "\u00c5l\u00f8kkekollegiet",
+    "link": "https://www.studiebolig-odense.dk/departments/310",
+    
+    "decoding_function": "decode_studiebolig_odense"
+  },
+  {
+    "name": "Harekæret",
+    "img": "Harekæret.jpg",
+    "link": "https://www.studiebolig-odense.dk/departments/2204?language=en",
+    "decoding_function": "decode_studiebolig_odense"
+  },
+  {
+    "name": "Landø Kollegiet",
+    "img": "Landø Kollegiet.jpg",
+    "links": 
+    {
+      "text": "https://www.kristiansdal.dk/organisationer/landø-kollegiet",
+      "data": "http://www579.wbhosting.dk/dept/4201/index"
+    },
+    "decoding_function": "decode_kristiansdal"
+  },
+  {
+    "name": "Langelinie Kollegiet",
+    "img": "Langelinie Kollegiet.jpg",
+    "links": {
+      "description": "https://www.kristiansdal.dk/organisationer/langelinie-kollegiet",
+      "data": "http://www579.wbhosting.dk/dept/4501/index"
+    },
+    "description": "Attraktivt kollegie beliggende tæt på Centrum, Odense Universitetshospital og Odense Å. Bemærk, det er kollegieboliger.",
+    "decoding_function": "decode_kristiansdal"
+  },
+  {
+    "name": "Rasmus Raskkollegiet",
+    "img": "Rasmus Raskkollegiet.jpg",
+    "link": "https://www.kollegieboligselskabet.dk/vores-afdelinger/rasmus-raskkollegiet/",
+    "decoding_function": "decode_rasmus_rask"
+  }
 ]
