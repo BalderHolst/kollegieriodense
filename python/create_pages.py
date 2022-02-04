@@ -134,9 +134,8 @@ def create_page(data):
 						elif('fee' in data['dorms'].keys()):
 							div(data['dorms']['fee'][i] + "kr",cls="depositum")
 
-						
-					
-						a("Til side",id=f"selector{i}",cls="selector",href=data['dorms']['links'][i],target = "_blank")
+						if('links' in data.keys()):	
+							a("Til side",id=f"selector{i}",cls="selector",href=data['dorms']['links'][i],target = "_blank")
 
 
 

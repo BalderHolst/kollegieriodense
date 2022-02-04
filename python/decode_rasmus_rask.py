@@ -18,6 +18,8 @@ def get_prices(soup):
 	d['depositum'] = []
 	d['space'] = []
 	d['floorplans'] = []
+	d['locations'] = []
+	d['links'] = []
 
 	tags = soup.find_all(class_ = "list-item")
 	# tags2 = soup.find_all(class_ = "list-item _md ng-hide")
@@ -52,6 +54,8 @@ def get_prices(soup):
 
 		d['floorplans'].append("https://www.kollegieboligselskabet.dk/" + tag.contents[15].contents[1]['ng-click'].split('\'')[-2])
 
+		d['locations'].append("Elmelundsvej 4, 5200 Odense V")
+
 	return(d)
 
 
@@ -62,19 +66,8 @@ def decode_rasmus_rask(website):
 
 	data = {}
 
-	# data['name'] = get_name(soup)
-	# data['facilities'] = get_facilities(soup)
-
 	data['dorms'] = {}
 	data['dorms'] = data['dorms'] | get_prices(soup)
-	# data['dorms']['space'] = get_space(soup)
-	# data['dorms']['depositum'] = get_depositum(soup)
-	# data['dorms']['floorplans'] = get_floorplans(soup)
-	# data['dorms']['rooms'] = get_rooms(soup)
-
-	# data['dorms']['locations'], data['dorms']['links'] = get_locations_and_links(soup)
-	# data['dorms']['own'], data['dorms']['shared'] = get_own_and_shared(soup)
-
 
 	return(data)
 
