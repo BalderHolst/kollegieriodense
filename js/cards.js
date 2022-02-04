@@ -101,14 +101,14 @@ function createCard(n,obj){
 
 	 var space = document.createElement('div');
 	 space.classList.add('space');
-	 space.innerHTML = format_range(obj.dorms.space,"m<sup>2</sup>")
+	 space.innerHTML = format_space(obj.dorms.space)
 
 	 var rooms = document.createElement('div');
 	// rooms.classList.add('rooms');
 	// rooms.innerHTML = obj.dorms.rooms
 	var cost = document.createElement('div');
 	cost.classList.add('cost');
-	cost.innerHTML = format_range(obj.dorms.prices,"kr", false);
+	cost.innerHTML = format_price(obj.dorms.prices);
 
 	var info_bar = document.createElement('div');
 	info_bar.classList.add('infobar');
@@ -119,7 +119,7 @@ function createCard(n,obj){
 
 	var text = document.createElement('div');
 	text.classList.add("info");
-	text.innerHTML = cutTextBefore("obj.description",123);
+	if('description' in obj) text.innerHTML = cutTextBefore(obj.description,123);
 
 	var card_front = document.createElement('div');
 	card_front.classList.add("card-front");
@@ -178,7 +178,16 @@ function createCard(n,obj){
 	 	else return(name);
 	}
 
-	function format_range(arr,ender, round = true){
+	function format_price(arr){
+
+		if (arr.length == 1) return(arr[0] + "kr");
+		return(arr[0] + "kr - " + arr[1] + "kr");
+	}
+
+
+	function format_space(arr, round = true){
+
+		const ender = "m<sup>2</sup>";
 
 		var numbers = []
 
@@ -190,8 +199,8 @@ function createCard(n,obj){
 		let max = Math.max.apply(Math, numbers);
 
 		if(round == true){
-			min = Math.round(min)
-			max = Math.round(max)
+			min = Math.round(min);
+			max = Math.round(max);
 		}
 
 	// console.log(arr,numbers);
@@ -220,7 +229,7 @@ function makeHTMLList(l) {
 
 
 function cutTextBefore(s,cutoff){
-	let search_length = 3;
+	let search_length = 10;
 	let end_string = "...";
 
 	if(s.length < cutoff - search_length) {
@@ -229,7 +238,7 @@ function cutTextBefore(s,cutoff){
 	}
 
 	let ss = s.substring(cutoff - search_length,cutoff);
-	let index = ss.indexOf(' ');
+	let index = ss.indexOf('.');
 	
 	if(index == -1) return(s.substring(0,cutoff) + end_string);
 
