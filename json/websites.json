@@ -3,25 +3,29 @@
     "name": "Blangstedg\u00e5rdkollegiet",
     "link": "https://www.studiebolig-odense.dk/departments/314",
     "img": "blangstedgaardkollegiet.jpg",
-    "decoding_function": "decode_studiebolig_odense"
+    "decoding_function": "decode_studiebolig_odense",
+    "description": "Nyere rækkehuslignende ungdomsboliger"
   },
   {
     "name": "Carl Nielsen Kollegiet",
     "link": "https://www.studiebolig-odense.dk/departments/307",
     "img": "Carl_Nielsen_Kollegiet.jpg",
-    "decoding_function": "decode_studiebolig_odense"
+    "decoding_function": "decode_studiebolig_odense",
+    "description": "Kollegiet har eget fælleshus, hvor der er gode fællesrum med tv, køkken og aktivitetsrum med bordtennis og dartspil. Der bliver løbende afholdt fællesarrangementer på kollegiet, såsom tour de chambre."
   },
   {
     "name": "H. C. \u00d8rsteds Kollegiet",
     "link": "https://www.studiebolig-odense.dk/departments/4301?page=1&language=da",
     "img": "H.C. Orstedkollegiet.jpg",
-    "decoding_function": "decode_studiebolig_odense"
+    "decoding_function": "decode_studiebolig_odense",
+    "description": "H.C. Ørstedkollegiet ligger på Niels Bohrs Allé i Odense. Det ligger tæt ved Hjallese, ca. 3,5 km. fra byens centrum, 3 km. fra Rosengårdcentret og er centralt placeret i forhold til studiesteder og indkøbsmuligheder."
   },
   {
     "name": "Hans Tausen kollegiet",
     "link": "https://studiebolig-odense.dk/departments/311",
     "img": "Hans Tausen kollegiet.jpg",
-    "decoding_function": "decode_studiebolig_odense"
+    "decoding_function": "decode_studiebolig_odense",
+    "description": "Kollegiet har en dejlig beliggenhed midt i Odense centrum, tæt på banegården og indkøbsmuligheder."
   },
   {
     "name": "J. B. Winsl\u00f8wkollegiet",
@@ -33,37 +37,43 @@
     "name": "Kaj Munk Kollegiet",
     "link": "https://www.studiebolig-odense.dk/departments/4001",
     
-    "decoding_function": "decode_studiebolig_odense"
+    "decoding_function": "decode_studiebolig_odense",
+    "description": "Kollegiet har en dejlig beliggenhed nær Odense Å og grønne områder. På kollegiet er en hyggelig grillplads, der om sommeren er samlingspunkt for kollegiets beboere."
   },
   {
     "name": "Lindekollegiet",
     "link": "https://www.studiebolig-odense.dk/departments/312",
     
-    "decoding_function": "decode_studiebolig_odense"
+    "decoding_function": "decode_studiebolig_odense",
+    "description": "Lindekollegiets centrale beliggenhed giver nem adgang til bus, tog og rutebil. Året igennem er kollegiets fællesrum med bar, poolbord m.v. centrum for sociale aktiviteter. Om sommeren kan man grille og hygge sig i gården."
   },
   {
     "name": "Slotsgadekollegiet",
     "link": "https://www.studiebolig-odense.dk/departments/313",
     
-    "decoding_function": "decode_studiebolig_odense"
+    "decoding_function": "decode_studiebolig_odense",
+    "description": "Kollegiet har en god beliggenhed i Odense centrum, lige ved gågaderne, og ikke langt fra banegården."
   },
   {
     "name": "Tornbjergkollegiet",
     "link": "https://www.studiebolig-odense.dk/departments/315",
     "img": "Tornbjergkollegiet.jpg", 
-    "decoding_function": "decode_studiebolig_odense"
+    "decoding_function": "decode_studiebolig_odense",
+    "description": "Socialt kollegium beliggende tæt på universitetet, i dejligt grønt område, med stort udendørs fællesareal. Hvert værelse består af 20m2 fordelt på 13m2 værelse og 7m2 hems."
   },
   {
     "name": "\u00c5l\u00f8kkekollegiet",
     "link": "https://www.studiebolig-odense.dk/departments/310",
     
-    "decoding_function": "decode_studiebolig_odense"
+    "decoding_function": "decode_studiebolig_odense",
+    "description": "Vi har et fælleshus, hvor der er festlokale med stort køkken, og tv-stue. Køkkenet er veludstyret og tv-stuen har billard, dart og diverse spil, plus køleskab til drikkevarer. I kælderen har vi små opbevaringsrum til de ting, man ikke kan have i sin lejlighed. Kollegiet har en dejlig græsplæne omgivet af terrasse og buske. Der er grill, bord og bænk, havestole, og en overdækket pergola."
   },
   {
     "name": "Harekæret",
     "img": "Harekæret.jpg",
     "link": "https://www.studiebolig-odense.dk/departments/2204?language=en",
-    "decoding_function": "decode_studiebolig_odense"
+    "decoding_function": "decode_studiebolig_odense",
+    "description":"Beliggenheden tæt på indkøbsmuligheder og Syddansk Universitet"
   },
   {
     "name": "Landø Kollegiet",
@@ -73,7 +83,8 @@
       "text": "https://www.kristiansdal.dk/organisationer/landø-kollegiet",
       "data": "http://www579.wbhosting.dk/dept/4201/index"
     },
-    "decoding_function": "decode_kristiansdal"
+    "decoding_function": "decode_kristiansdal",
+    "description": "12 Kollegieboliger, som kan søges af unge- under uddannelse ved henvendelse til Udlejningen på tlf. 63 14 22 50"
   },
   {
     "name": "Langelinie Kollegiet",
@@ -82,13 +93,14 @@
       "description": "https://www.kristiansdal.dk/organisationer/langelinie-kollegiet",
       "data": "http://www579.wbhosting.dk/dept/4501/index"
     },
-    "description": "Attraktivt kollegie beliggende tæt på Centrum, Odense Universitetshospital og Odense Å. Bemærk, det er kollegieboliger.",
-    "decoding_function": "decode_kristiansdal"
+    "decoding_function": "decode_kristiansdal",
+    "description": "Attraktivt kollegie beliggende tæt på Centrum, Odense Universitetshospital og Odense Å. Bemærk, det er kollegieboliger."
   },
   {
     "name": "Rasmus Raskkollegiet",
     "img": "Rasmus Raskkollegiet.jpg",
     "link": "https://www.kollegieboligselskabet.dk/vores-afdelinger/rasmus-raskkollegiet/",
-    "decoding_function": "decode_rasmus_rask"
+    "decoding_function": "decode_rasmus_rask",
+    "description": " Kollegiet er beliggende i Odense V, tæt på busforbindelse, den kommende letbane og der er flere muligheder for indkøb indenfor gåafstand."
   }
 ]

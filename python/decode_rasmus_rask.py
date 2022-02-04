@@ -19,7 +19,7 @@ def get_prices(soup):
 	d['space'] = []
 	d['floorplans'] = []
 	d['locations'] = []
-	d['links'] = []
+	# d['links'] = []
 
 	tags = soup.find_all(class_ = "list-item")
 	# tags2 = soup.find_all(class_ = "list-item _md ng-hide")

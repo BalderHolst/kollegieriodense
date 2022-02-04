@@ -106,7 +106,7 @@ def create_page(data):
 
 				div("Nedenfor kan du vælge et bestemt værelse, og se dets faciliteter og grundplan",cls="how-to")
 
-				if('own' in data.keys()):
+				if('own' in data['dorms'].keys()):
 					makeTables(data)
 
 			with div(cls="options-container"):
@@ -134,7 +134,8 @@ def create_page(data):
 						elif('fee' in data['dorms'].keys()):
 							div(data['dorms']['fee'][i] + "kr",cls="depositum")
 
-						if('links' in data.keys()):	
+						# print(len(data['dorms']['links']))
+						if('links' in data['dorms'].keys()):	
 							a("Til side",id=f"selector{i}",cls="selector",href=data['dorms']['links'][i],target = "_blank")
 
 
