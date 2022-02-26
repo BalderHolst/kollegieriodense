@@ -18,7 +18,7 @@ def get_prices(soup):
 	d['depositum'] = []
 	d['space'] = []
 	d['floorplans'] = []
-	d['locations'] = []
+	d['addresses'] = []
 	# d['links'] = []
 
 	tags = soup.find_all(class_ = "list-item")
@@ -54,7 +54,7 @@ def get_prices(soup):
 
 		d['floorplans'].append("https://www.kollegieboligselskabet.dk/" + tag.contents[15].contents[1]['ng-click'].split('\'')[-2])
 
-		d['locations'].append("Elmelundsvej 4, 5200 Odense V")
+		d['addresses'].append("Elmelundsvej 4, 5200 Odense V")
 
 	return(d)
 

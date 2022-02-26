@@ -109,17 +109,17 @@ def get_rooms(soup):
 
 # views-field-ANTRUM
 
-def get_locations_and_links(soup):
+def get_addresses_and_links(soup):
 	tags = soup.find_all(class_ = "views-field-ADRESSE")[1:]
-	locations = []
+	addresses = []
 	links = []
 	for tag in tags:
 		link = "https://www.studiebolig-odense.dk" + tag.contents[1]['href']
 		location = tag.contents[1].contents[0] + ' ' + tag.contents[1].contents[2][1:]
 		location = make_singlespaced(location)
 		links.append(link)
-		locations.append(location)
-	return(locations,links) 
+		addresses.append(location)
+	return(addresses,links) 
 
 def includes_class(tag,c):
 	# print(f"{tag['title']} == {c}")
@@ -180,7 +180,7 @@ def decode_studiebolig_odense(website):
 	data['dorms']['floorplans'] = get_floorplans(soup)
 	data['dorms']['rooms'] = get_rooms(soup)
 
-	data['dorms']['locations'], data['dorms']['links'] = get_locations_and_links(soup)
+	data['dorms']['addresses'], data['dorms']['links'] = get_addresses_and_links(soup)
 	data['dorms']['own'], data['dorms']['shared'] = get_own_and_shared(soup)
 
 	return(data)

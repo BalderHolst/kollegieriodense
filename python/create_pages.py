@@ -117,7 +117,7 @@ def create_page(data):
 			with div(cls="options-container"):
 				
 				with div(cls="table-headers"):
-						div("Adresse",cls="header locations")
+						div("Adresse",cls="header addresses")
 						div("Størrelse",cls="header")
 						div("Værrelser",cls="header")
 						div("Leje",cls="header")
@@ -127,9 +127,9 @@ def create_page(data):
 						elif('fee' in data['dorms'].keys()):
 							div("Depositum",cls="header")
 
-				for i in range(len(data['dorms']['locations'])):
+				for i in range(len(data['dorms']['addresses'])):
 					with div(id=f"option{i}",onclick=f"select({i});",cls="option"):
-						div(data['dorms']['locations'][i],cls="locations")
+						div(data['dorms']['addresses'][i],cls="addresses")
 						div(data['dorms']['space'][i] + "m2",cls="space")
 						div(data['dorms']['rooms'][i],cls="rooms")
 						div(data['dorms']['prices'][i] + "kr",cls="prices")

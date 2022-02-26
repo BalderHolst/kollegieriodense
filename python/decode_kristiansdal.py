@@ -6,17 +6,17 @@ from decode_utils import *
 def get_soup(url):
 	return(BeautifulSoup(requests.get(url).text,'lxml'))
 
-def get_locations_and_links(soup):
+def get_addresses_and_links(soup):
 	tags = soup.find_all(class_ = "views-field-ADRESSE")[1:]
-	locations = []
+	addresses = []
 	links = []
 	for tag in tags:
 		link = "https://www.studiebolig-odense.dk" + tag.contents[1]['href']
 		location = tag.contents[1].contents[0] + ' ' + tag.contents[1].contents[2][1:]
-		location = make_singlespaced(location)
+		location = make_singlespaced(location).replace('\n',"")
 		links.append(link)
-		locations.append(location)
-	return(locations,links) 
+		addresses.append(location)
+	return(addresses,links) 
 
 def get_prices(soup):
 	tags = soup.find_all(class_ = "views-field-LEJE")[1:]
@@ -89,7 +89,7 @@ def decode_kristiansdal(website):
 	data['dorms']['fee'] = get_fee(soup)
 	data['dorms']['rooms'] = get_rooms(soup)
 	data['dorms']['floorplans'] = get_floorplans(soup)
-	data['dorms']['locations'], data['dorms']['links'] = get_locations_and_links(soup)
+	data['dorms']['addresses'], data['dorms']['links'] = get_addresses_and_links(soup)
 
 	
 
