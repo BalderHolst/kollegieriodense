@@ -6,33 +6,46 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/grid.css">
 
+	<script defer src="js/load_data.js"></script>
 	<script defer src="js/cards.js"></script>
 	<script defer src="js/rows.js"></script>
+	<script defer src="js/map.js"></script>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
+
+
+	<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
 
 	<title>Kollegier</title>
 </head>
 <body>
 	<header>
 		<a href="index.html"><div class="title">Kollegier i Odense</h1></a>
-		<div id="navbar">	
-			<a href="index.html" class="nav">hjem</a>
-			<a href="pages/om.html" class="nav">om</a>
-			<a href="pages/kontakt.html" class="nav">kontakt</a>
+			<div id="navbar">	
+				<a href="index.html" class="nav">hjem</a>
+				<a href="pages/om.html" class="nav">om</a>
+				<a href="pages/kontakt.html" class="nav">kontakt</a>
+			</div>
+		</header>
+
+		<div class="text-box">
+			<h3 class="header">Velkommen til din lokale kollegieportal</h3>
+			Dette er en sjfgslregj hprg sprh girdhui
 		</div>
-	</header>
 
-	<div class="text-box">
-		<h3 class="header">Velkommen til din lokale kollegieportal</h3>
-		Dette er en sjfgslregj hprg sprh girdhui
-	</div>
+		<div id='map' style='height: 400px;'></div>
+		
+		
 
-	<div id="grid-container">
-		<!-- Her indsættes kort af cards.js -->
-	</div>
-	
-</body>
-</html>
+
+
+		<div id="grid-container">
+			<!-- Her indsættes kort af cards.js -->
+		</div>
+
+	</body>
+	</html>

@@ -84,9 +84,14 @@ def create_page(data):
 			with div(cls="cols"):
 
 				if('facilities' in data.keys()):
-					with ul(cls="list"):
-						for item in data['facilities']:
-							li(item,cls="list-item")
+					if(type(data['facilities']) == list):
+						with ul(cls="list facilities"):
+							for item in data['facilities']:
+								li(item,cls="list-item")
+					else:
+						div(data['facilities'],cls="facilities")
+				else:
+					div()
 
 				
 

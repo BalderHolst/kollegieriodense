@@ -105,11 +105,13 @@ body{
 	grid-template-columns: 49.3% 49.3%;
 	column-gap: 1.4%;
 	grid-row-gap: 15px;
-	/*grid-template-rows: max(100px,);*/
+	/*grid-template-rows: ;*/
 }
 
 .floorplans{
 	/*overflow: contain;*/
+	min-height: 300px;
+
 	position: relative;
 	border: 2px solid var(--accent-color);
 	border-radius: var(--corner-radius);
@@ -118,6 +120,7 @@ body{
 .floorplans img{
 	position: absolute;
 	top: 0;
+
 
 	max-width: 100%;
 	max-height: 100%;

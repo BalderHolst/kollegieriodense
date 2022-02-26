@@ -45,20 +45,10 @@ function flip(n){
 function createCards(){
 	getData().then((data) => {
 			// console.log(data)
-			console.log(data);
 			createCardGrid(data);
 		})	
 }
 
-
-
-async function getData(){
-	const response = await fetch('https://raw.githubusercontent.com/Baldur2011/Kollegier/main/json/scraped.json');
-	const data = await response.json();
-
-	return(data)
-
-}
 
 function createCardGrid(data){
 
@@ -141,7 +131,12 @@ function createCard(n,obj){
 
 	if(obj.facilities){
 		text.classList.add("facilities");
-		text.appendChild(makeHTMLList(obj.facilities));
+		if(obj.facilities.constructor === Array) text.appendChild(makeHTMLList(obj.facilities));
+		else {
+			t = document.createElement('div');
+			t.textContent = obj.facilities;
+			text.appendChild(t);
+		}
 	}
 
 	var card_back = document.createElement('div');

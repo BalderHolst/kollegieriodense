@@ -83,7 +83,7 @@ header a{
 	/*margin-bottom: 3px;*/
 }
 
-.text-box{
+.text-box, #map{
 	margin: 20px calc(var(--space) + var(--extra-space));
 	padding: 20px 30px;
 	background-color: white;
