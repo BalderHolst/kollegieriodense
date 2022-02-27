@@ -50,7 +50,7 @@ def get_location(place):
 def get_options(string):
 	string = string.lower()
 
-	possibilities = [['å','aa'],['aa','å'],['gade',' gade']]
+	possibilities = [['å','aa'],['aa','å'],['gade',' gade'],['kollegiet',' kollegiet']]
 
 	options = []
 
@@ -103,21 +103,21 @@ if __name__ == "__main__":
 	data = {}
 
 
-	print(get_location("Hans Tausensgade 5000, Odense C Hans Tausen kollegiet"))
+	# print(get_location("Hans Tausensgade 5000, Odense C Hans Tausen kollegiet"))
 
 
 	# print(get_location(""))
 
-	# with open('../json/scraped.json','r',encoding="utf-8") as f:
-	# 	data = json.load(f)
+	with open('../json/scraped.json','r',encoding="utf-8") as f:
+		data = json.load(f)
 
 
-	# data = add_locations(data)
+	data = add_locations(data)
 
 
 
-	# with open('../json/scraped.json','w',encoding="utf-8") as f:
-	# 	json.dump(data,f)
+	with open('../json/scraped.json','w',encoding="utf-8") as f:
+		json.dump(data,f)
 
 
 
