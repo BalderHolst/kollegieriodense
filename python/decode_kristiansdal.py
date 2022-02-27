@@ -78,7 +78,7 @@ def get_floorplans(soup):
 def decode_kristiansdal(website):
 	
 	# soup_text = get_soup(website['links']['text'])
-	soup = get_soup(website['links']['data'])
+	soup = get_soup(website['link'])
 
 
 	data = {}

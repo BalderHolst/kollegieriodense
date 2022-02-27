@@ -79,7 +79,9 @@ def create_page(data):
 
 	with doc:
 		with div(cls="text-box"):
-			h2(data['name'],cls="header")
+			with h2(data['name'],cls="header"):
+				with a(href=data['link']):
+					img(src='../../img/link.png', style="height: 0.7em;")
 			
 			with div(cls="cols"):
 

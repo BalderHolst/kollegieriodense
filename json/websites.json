@@ -78,21 +78,14 @@
   {
     "name": "Landø Kollegiet",
     "img": "Landø Kollegiet.jpg",
-    "links": 
-    {
-      "text": "https://www.kristiansdal.dk/organisationer/landø-kollegiet",
-      "data": "http://www579.wbhosting.dk/dept/4201/index"
-    },
+    "link": "http://www579.wbhosting.dk/dept/4201/index",
     "decoding_function": "decode_kristiansdal",
     "description": "12 Kollegieboliger, som kan søges af unge- under uddannelse ved henvendelse til Udlejningen på tlf. 63 14 22 50"
   },
   {
     "name": "Langelinie Kollegiet",
     "img": "Langelinie Kollegiet.jpg",
-    "links": {
-      "description": "https://www.kristiansdal.dk/organisationer/langelinie-kollegiet",
-      "data": "http://www579.wbhosting.dk/dept/4501/index"
-    },
+    "link": "http://www579.wbhosting.dk/dept/4501/index",
     "decoding_function": "decode_kristiansdal",
     "description": "Attraktivt kollegie beliggende tæt på Centrum, Odense Universitetshospital og Odense Å. Bemærk, det er kollegieboliger."
   },
