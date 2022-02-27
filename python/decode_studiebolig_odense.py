@@ -116,7 +116,7 @@ def get_addresses_and_links(soup):
 	for tag in tags:
 		link = "https://www.studiebolig-odense.dk" + tag.contents[1]['href']
 		location = tag.contents[1].contents[0] + ' ' + tag.contents[1].contents[2][1:]
-		location = make_singlespaced(location).replace("Hans Tausensgade", "Hans Tausens gade")
+		location = make_singlespaced(location)
 		links.append(link)
 		addresses.append(location)
 	return(addresses,links) 
