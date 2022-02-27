@@ -2,7 +2,7 @@ var number_of_cards = 0;
 
 
 
-createCards();
+// createCards();
 
 
 for (var i = 0; i < number_of_cards; i++) {
@@ -42,14 +42,7 @@ function flip(n){
 
 // ---------------------------------------------------- create cards
 
-function createCards(){
-	getData().then((data) => {
-			// console.log(data)
-			createCardGrid(data);
-		})	
-}
-
-
+// gets called by load_data.py when data is recieved
 function createCardGrid(data){
 
 	number_of_cards = data.length;

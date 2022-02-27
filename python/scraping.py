@@ -7,7 +7,7 @@ import json
 from decode_studiebolig_odense import *
 from decode_kristiansdal import *
 from decode_rasmus_rask import *
-
+from get_coordinates import *
 
 
 def getWebsites():
@@ -73,15 +73,14 @@ def do_it():
 	for website in websites:
 		print(f"Scraping: {website['name']}")
 
-
 		data.append(website | decode(website))
 
 
+	data = add_locations(data)
 
 	with open('../json/scraped.json','w') as f:
 		json.dump(data,f)
 
-	encoded_text = ''
 
 
 if __name__ == '__main__':

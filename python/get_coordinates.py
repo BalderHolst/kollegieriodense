@@ -13,7 +13,7 @@ def get_location(place):
 		# entering the location name
 		getLoc = loc.geocode(place)
 
-		return({"location address": getLoc.address, "lat": getLoc.latitude, "lon": getLoc.longitude})
+		return({"search_string": place,"location address": getLoc.address, "lat": getLoc.latitude, "lon": getLoc.longitude})
 	
 	except AttributeError:
 		words = place.split(' ')[0:-1]
@@ -58,11 +58,11 @@ if __name__ == "__main__":
 
 	data = {}
 
+	# print(get_location(""))
+
 	with open('../json/scraped.json','r',encoding="utf-8") as f:
 		data = json.load(f)
 
-
-	# print(data[0].keys())
 
 	data = add_locations(data)
 
