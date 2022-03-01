@@ -50,6 +50,11 @@ def getSpace(website,soup):
 
 def decode(website):
 
+	if(website['decoding_function'] == False):
+		print("...no decoding function.")
+		return(website)
+
+
 	fun = website['decoding_function']
 
 	# print('using deciding function: ' + fun)
@@ -70,13 +75,22 @@ def do_it():
 
 	data = []
 
-	for website in websites:
-		print(f"Scraping: {website['name']}")
+	for i,website in enumerate(websites):
+		print(f"[{i+1}/{len(websites)}] Scraping: {website['name']}")
 
-		data.append(website | decode(website))
+		website = website | decode(website)
+
+		if 'dorms' in website.keys():
+			website['locations'] = find_locations(website['dorms']['addresses'])
+
+		data.append(website)
+
+		print() #adds empty line
 
 
-	data = add_locations(data)
+
+	# if 'dorms' in website.keys():
+	# 	data = add_locations(data)
 
 	with open('../json/scraped.json','w') as f:
 		json.dump(data,f)

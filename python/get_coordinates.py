@@ -9,7 +9,7 @@ def get_location(place):
 
 	place = place.replace(',',"")
 
-	print(place)
+	print(f"Get Coordinates: Searching {place}",end=" ")
 
 	try:
 		# calling the Nominatim tool
@@ -19,24 +19,29 @@ def get_location(place):
 
 		try:
 			getLoc = loc.geocode(place)
-			return({"search_string": place,"location address": getLoc.address, "lat": getLoc.latitude, "lon": getLoc.longitude})
+
+			l = {"Get Coordinates: search_string": place,"location address": getLoc.address, "lat": getLoc.latitude, "lon": getLoc.longitude}
+			print("- success!\n")
+			return(l)
 		
 		except AttributeError:
-			
+			print("- failed.")
+
 			alternatives = get_options(place)
 
 			for alternative in alternatives:
-				print(f"trying alternative: \"{alternative}\"")
+				print(f"Get Coordinates: trying alternative: \"{alternative}\"",end=" ")
 				try:
 					getLoc = loc.geocode(alternative)
-					return({"search_string": place,"location address": getLoc.address, "lat": getLoc.latitude, "lon": getLoc.longitude})
+					l = {"Get Coordinates: search_string": place,"location address": getLoc.address, "lat": getLoc.latitude, "lon": getLoc.longitude}
+					print("- success!\n")
+					return(l)
 				except AttributeError:
-					pass
+					print("- failed.")
 
 
 
 			raise AttributeError("could not find place")
-
 	
 	except AttributeError:
 		words = place.split(' ')[0:-1]
@@ -80,15 +85,22 @@ def list_unique(l):
 
 	return(out)
 
+
+def find_locations(addresses):
+	locations = []
+
+	for address in list_unique(addresses):
+			locations.append(get_location(address))
+
+	return(locations)
+
+
 def add_locations(data):
 	for place in data:
 	# place = data[0]
 		location_addresses = list_unique(place['dorms']['addresses'])
 
-		locations = []
-
-		for address in location_addresses:
-			locations.append(get_location(address))
+		locations = find_locations(location_addresses)
 
 		place['locations'] = locations
 
@@ -121,4 +133,4 @@ if __name__ == "__main__":
 
 
 
-	print("done")
+	# print("done")
