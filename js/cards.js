@@ -66,6 +66,8 @@ function createCardGrid(data){
 
 function createCard(n,obj){
 
+	console.log(obj)
+
 	 //  front
 	 var img = document.createElement('img');
 	 if(obj.img){ 
@@ -150,6 +152,7 @@ function createCard(n,obj){
 	var button = document.createElement('a');
 	button.classList.add("to-page");
 	if(!obj.redirect){
+		button.setAttribute("style","background:red;")
 		button.setAttribute("href","pages/Info-pages/" + obj.name + ".html");
 	}
 	else{
