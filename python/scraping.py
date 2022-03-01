@@ -4,9 +4,13 @@ from bs4 import BeautifulSoup
 import requests
 import json
 
+import sys
+sys.path.insert(1, 'decoding_functions/')
+
 from decode_studiebolig_odense import *
 from decode_kristiansdal import *
 from decode_rasmus_rask import *
+
 from get_coordinates import *
 
 

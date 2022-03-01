@@ -7,9 +7,6 @@ var number_of_cards = 0;
 
 for (var i = 0; i < number_of_cards; i++) {
 	id = "card" + i;
-	// document.getElementById(id).onclick = function() {  
-	// 	console.log(i)  
-	// };  
 	card = document.getElementById(id)
 	card.setAttribute('onclick', "flip(" + i + ")");
 }
@@ -44,6 +41,7 @@ function flip(n){
 
 // gets called by load_data.py when data is recieved
 function createCardGrid(data){
+	// console.log(data);
 
 	number_of_cards = data.length;
 	// console.log("found " + number_of_cards + " cards")
@@ -62,14 +60,15 @@ function createCardGrid(data){
 		card.setAttribute('onclick', "flip(" + i +")");
 		grid.appendChild(card)
 	}
-	// console.log(grid);
+	console.log(grid);
 }
 
 
 function createCard(n,obj){
+
 	 //  front
 	 var img = document.createElement('img');
-	 if(obj.img != undefined){ 
+	 if(obj.img){ 
 	 	img.setAttribute('src', "img/" + obj.img);
 	 }
 	 else {
@@ -84,14 +83,22 @@ function createCard(n,obj){
 
 	 var space = document.createElement('div');
 	 space.classList.add('space');
-	 space.innerHTML = format_space(obj.dorms.space)
+	 
 
 	 var rooms = document.createElement('div');
 	// rooms.classList.add('rooms');
 	// rooms.innerHTML = obj.dorms.rooms
 	var cost = document.createElement('div');
 	cost.classList.add('cost');
-	cost.innerHTML = format_price(obj.dorms.prices);
+
+	if (obj.dorms){
+		space.innerHTML = format_space(obj.dorms.space)
+		cost.innerHTML = format_price(obj.dorms.prices);
+	}
+	else{
+		space.innerHTML = "? m<sup>2</sup>"
+		cost.innerHTML = "? kr"
+	}
 
 	var info_bar = document.createElement('div');
 	info_bar.classList.add('infobar');
@@ -142,7 +149,12 @@ function createCard(n,obj){
 
 	var button = document.createElement('a');
 	button.classList.add("to-page");
-	button.setAttribute("href","pages/Info-pages/" + obj.name + ".html")
+	if(!obj.redirect){
+		button.setAttribute("href","pages/Info-pages/" + obj.name + ".html");
+	}
+	else{
+		button.setAttribute("href",obj.link);
+	}
 	button.innerHTML = "Se mere"
 	 // Merge
 
@@ -163,7 +175,7 @@ function createCard(n,obj){
 
 	function format_name(name) {
 		if (name.length > 14) return(name.replace("kollegiet","-kollegiet").replace(" -kollegiet"," kollegiet"));
-	 	else return(name);
+		else return(name);
 	}
 
 	function format_price(arr){

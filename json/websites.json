@@ -101,12 +101,14 @@
     "name": "Thomas B. Thriges Kollegium",
     "img": "tbt.jpg",
     "link": "http://tbtkollegiet.dk/praktisk/",
-    "decoding_function": false
+    "decoding_function": false,
+    "redirect": true
   },
   {
     "name": "Campus Kollegiet",
     "img": "Campus_Kollegiet.png",
     "link": "https://campuskollegiet.dk",
-    "decoding_function": false
+    "decoding_function": false,
+    "redirect": true
   }
 ]
