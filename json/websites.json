@@ -106,7 +106,7 @@
     "description": "Thomas B. Thriges Kollegium er placeret tæt på Syddansk Universitet, Campusvej 55, 5230 Odense og ikke mindst Det tekniske Fakultet og Det naturvidenskabelige Fakultet. Der er 4 km til centrum og turen tager ca. 15 min. på cykel. Derudover er der gode forbindelser med bybusserne til bymidten.",
     "facilities": ["3-fløjet skab med skydelåger til opbevaring af tøj og diverse andre ting","Fælleshuset","Vaskerum","Udendørsarealer","Poolrummet","Bordfodbold og bordtennis","Flot fælleskøkken","Cykelparkering"],
     "dorms": {
-      "cost": ["2185"],
+      "prices": ["2185"],
       "depositum": ["7105"],
       "space": ["12"],
       "addresses": [" Munkebjergvænget 2, 5230 Odense"]
@@ -124,7 +124,7 @@
     "facilities": "“A.P. Møller og Hustru Chastine Mc-Kinney Møllers Fond til almene Formaal” has chosen to give the University of Southern Denmark’s students a new hall of residence, Campus House, as a gift for SDU students. In this connection, the A. P. Møller Foundation has established “Fonden Universitetskollegiet i Odense” (the university hall of residence foundation in Odense), which owns and has built Campus House. The building was designed by C. F. Møller’s architects. With capacity for 250 students, Campus House spans three linked 14-storey buildings. Thus, Campus House has no “rear” side and looks attractive from every angle. The shape of the building and its spectacular architecture will make it easily recognisable on the campus and signify that there is something different inside here: a hall of residence that will become a striking landmark for the City of Odense and the university",
     "dorms":{
       "space": ["22","22","32"],
-      "cost": ["3000","3800","5105"],
+      "prices": ["3000","3800","5105"],
       "links": [
         "https://campuskollegiet.dk/rooms/single-room/",
         "https://campuskollegiet.dk/rooms/ease-of-access-room/",
