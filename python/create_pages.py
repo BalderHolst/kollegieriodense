@@ -74,8 +74,8 @@ def create_page(data):
 				div("Kollegier i Odense",cls="title")
 			with div(id="navbar"):
 				a("hjem",cls="nav",href="../../index.html")
+				a("kort",cls="nav",href="../map.html")
 				a("om",cls="nav",href="../om.html")
-				a("kontakt",cls="nav",href="../kontakt.html")
 
 	with doc:
 		with div(cls="text-box"):
@@ -163,7 +163,15 @@ if __name__ == "__main__":
 	websites = get_website_data()
 
 	for website in websites:
-		print(f"Creating page for {website['name']}")
-		create_page(website)
+		
+		redirect = False
+		if "redirect" in website:
+			redirect = website['redirect']
+
+		if redirect == False:
+			print(f"Creating page for {website['name']}")
+			create_page(website)
+		else:
+			print(f"skipping {website['name']}")
 
 	print("done")
