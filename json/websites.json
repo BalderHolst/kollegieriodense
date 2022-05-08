@@ -121,14 +121,14 @@
     "decoding_function": false,
     "redirect": true,
     "description": "With capacity for 250 students, Campus House spans three linked 14-storey buildings. Thus, Campus House has no “rear” side and looks attractive from every angle.",
-    "facilities": "“A.P. Møller og Hustru Chastine Mc-Kinney Møllers Fond til almene Formaal” has chosen to give the University of Southern Denmark’s students a new hall of residence, Campus House, as a gift for SDU students. In this connection, the A. P. Møller Foundation has established “Fonden Universitetskollegiet i Odense” (the university hall of residence foundation in Odense), which owns and has built Campus House. The building was designed by C. F. Møller’s architects. With capacity for 250 students, Campus House spans three linked 14-storey buildings. Thus, Campus House has no “rear” side and looks attractive from every angle. The shape of the building and its spectacular architecture will make it easily recognisable on the campus and signify that there is something different inside here: a hall of residence that will become a striking landmark for the City of Odense and the university",
+    "facilities": "“A.P. Møller og Hustru Chastine Mc-Kinney Møllers Fond til almene Formaal” has chosen to give the University of Southern Denmark’s students a new hall of residence, Campus House, as a gift for SDU students. In this connection, the A. P. Møller Foundation has established “Fonden Universitetskollegiet i Odense” (the university hall of residence foundation in Odense), which owns and has built Campus House. The building was designed by C. F. Møller’s architects.\n\nWith capacity for 250 students, Campus House spans three linked 14-storey buildings. Thus, Campus House has no “rear” side and looks attractive from every angle. The shape of the building and its spectacular architecture will make it easily recognisable on the campus and signify that there is something different inside here: a hall of residence that will become a striking landmark for the City of Odense and the university",
     "dorms":{
       "space": ["22","22","32"],
       "prices": ["3000","3800","5105"],
       "links": [
         "https://campuskollegiet.dk/rooms/single-room/",
         "https://campuskollegiet.dk/rooms/ease-of-access-room/",
-        "https://campuskollegiet.dk/rooms/couples-room/"
+        "https://campuskollegiet.dk/rooms/  uples-room/"
       ],
       "depositum": ["9000","11400","151315"],
       "addresses": [

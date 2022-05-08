@@ -5,7 +5,7 @@ window.onresize = function(event) {
 };
 
 function update(){
-    width = Math.round(window.window.innerWidth/350)
+    width = Math.round(window.window.innerWidth/500)
 
     // console.log(width)
 

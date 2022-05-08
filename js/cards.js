@@ -1,8 +1,8 @@
 var number_of_cards = 0;
 
 
-
 // createCards();
+
 
 
 for (var i = 0; i < number_of_cards; i++) {
