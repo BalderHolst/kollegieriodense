@@ -50,6 +50,9 @@ def get_facilities(soup):
 			# print(better_line)
 			better_lines.append(better_line)
 
+	if(len(better_lines) == 0):
+		better_lines = ["(Ingen yderligere beskrivelse af kollegiet. Desværre.)"]
+
 	# print(better_lines)
 	return(better_lines)
 # 

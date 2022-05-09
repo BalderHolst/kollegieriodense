@@ -85,8 +85,9 @@ function createCard(n,obj){
         img.setAttribute('src', "img/" + obj.img);
     }
     else {
-        img.setAttribute('src', "img/no_image.jpg")
+        img.setAttribute('src', "img/no_image.jpg");
     };
+    img.setAttribute('alt', obj.name);
 
     var name = document.createElement('div');
     name.classList.add("card-title")
@@ -142,14 +143,26 @@ function createCard(n,obj){
 
     var text = document.createElement('div');
 
+    text.classList.add("facilities");
+
+    
     if(obj.facilities){
-        text.classList.add("facilities");
         if(obj.facilities.constructor === Array) text.appendChild(makeHTMLList(obj.facilities));
         else {
             t = document.createElement('div');
             t.textContent = obj.facilities;
             text.appendChild(t);
         }
+    }
+    else {
+        var t = document.createElement('div');
+        t.textContent = "(Ingen yderligere beskrivelse af kollegiet. Desværre.)";
+        text.appendChild(t);
+    }
+    if(obj.facilities === ""){
+        var t = document.createElement('div');
+        t.textContent = "(Ingen yderligere beskrivelse af kollegiet. Desværre.)";
+        text.appendChild(t);
     }
 
     var card_back = document.createElement('div');

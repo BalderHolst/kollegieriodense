@@ -832,7 +832,9 @@
         "img": "kajmunk.jpg",
         "decoding_function": "decode_studiebolig_odense",
         "description": "Kollegiet har en dejlig beliggenhed n\u00e6r Odense \u00c5 og gr\u00f8nne omr\u00e5der. P\u00e5 kollegiet er en hyggelig grillplads, der om sommeren er samlingspunkt for kollegiets beboere.",
-        "facilities": [],
+        "facilities": [
+            "(Ingen yderligere beskrivelse af kollegiet. Desv\u00e6rre.)"
+        ],
         "location": {
             "address": "Hjallesegade 11, 5260 Odense",
             "lat": 55.35647435736485,
