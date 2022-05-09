@@ -120,7 +120,7 @@ if __name__ == "__main__":
 
 	# print(get_location(""))
 
-	with open('../json/scraped.json','r',encoding="utf-8") as f:
+	with open('../json/scraped.json', 'r', encoding="utf-8") as f:
 		data = json.load(f)
 
 
@@ -128,8 +128,8 @@ if __name__ == "__main__":
 
 
 
-	with open('../json/scraped.json','w',encoding="utf-8") as f:
-		json.dump(data,f)
+	with open('../json/websites-locations.json', 'w', encoding="utf-8") as f:
+		json.dump(data, f, indent=4)
 
 
 

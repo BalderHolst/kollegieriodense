@@ -16,7 +16,7 @@ from get_coordinates import *
 
 def getWebsites():
 	s = ''
-	with open('../json/websites.json','r',encoding='utf-8') as f:
+	with open('../json/websites.json', 'r', encoding='utf-8') as f:
 		s = json.load(f)
 	return(s)
 

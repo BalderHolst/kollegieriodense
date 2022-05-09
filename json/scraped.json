@@ -89,6 +89,11 @@
                 [],
                 []
             ]
+        },
+        "location": {
+            "address": "Stammen, Herluf Trolle Parken, Blangstedg\u00e5rd, Odense, Odense Kommune, 5220, Danmark",
+            "lat": 55.3811503,
+            "lon": 10.4563114
         }
     },
     {
@@ -155,6 +160,11 @@
                 [],
                 []
             ]
+        },
+        "location": {
+            "address": "Stationsv\u00e6nget, Hjallese, Odense, Odense Kommune, 5260, Danmark",
+            "lat": 55.3598626,
+            "lon": 10.3909889
         }
     },
     {
@@ -325,6 +335,11 @@
                 ],
                 []
             ]
+        },
+        "location": {
+            "address": "Niels Bohrs Alle, Niels Bohrs All\u00e9, Cortex Park, Odense, Odense Kommune, 5230, Danmark",
+            "lat": 55.377593450000006,
+            "lon": 10.428866305568345
         }
     },
     {
@@ -588,6 +603,11 @@
                 [],
                 []
             ]
+        },
+        "location": {
+            "address": "Hans Tausens Gade, Odense, Odense Kommune, Region Syddanmark, 5000, Danmark",
+            "lat": 55.3990697,
+            "lon": 10.3820023
         }
     },
     {
@@ -799,6 +819,11 @@
                 [],
                 []
             ]
+        },
+        "location": {
+            "address": "Sdr. Boulevard, Hunderup, Odense, Odense Kommune, Region Syddanmark, 5000, Danmark",
+            "lat": 55.3878113,
+            "lon": 10.3743493
         }
     },
     {
@@ -850,6 +875,11 @@
                 ],
                 []
             ]
+        },
+        "location": {
+            "address": "Hjallesegade, Hjallese, Odense, Odense Kommune, 5260, Danmark",
+            "lat": 55.3563349,
+            "lon": 10.3942663
         }
     },
     {
@@ -1215,6 +1245,11 @@
                 [],
                 []
             ]
+        },
+        "location": {
+            "address": "\u00d8stre Stationsvej, Promenadebyen, Odense, Odense Kommune, Region Syddanmark, 5000, Danmark",
+            "lat": 55.4010648,
+            "lon": 10.3887561
         }
     },
     {
@@ -1450,6 +1485,11 @@
                 [],
                 []
             ]
+        },
+        "location": {
+            "address": "Lidl Odense C, Slotsgade, Hunderup, Odense, Odense Kommune, Region Syddanmark, 5000, Danmark",
+            "lat": 55.3964761,
+            "lon": 10.3831514
         }
     },
     {
@@ -1505,6 +1545,11 @@
                     "toilet"
                 ]
             ]
+        },
+        "location": {
+            "address": "Glanshatten, Tornbjerg, Over Holluf, Odense Kommune, 5220, Danmark",
+            "lat": 55.3689397,
+            "lon": 10.4571383
         }
     },
     {
@@ -1711,6 +1756,11 @@
                 [],
                 []
             ]
+        },
+        "location": {
+            "address": "Rug\u00e5rdsvej, Slukefter, Korup, Odense, Odense Kommune, 5491, Danmark",
+            "lat": 55.4249129,
+            "lon": 10.2540254
         }
     },
     {
@@ -1768,6 +1818,11 @@
                 [],
                 []
             ]
+        },
+        "location": {
+            "address": "Harek\u00e6ret, Tornbjerg, Over Holluf, Odense Kommune, 5220, Danmark",
+            "lat": 55.3646385,
+            "lon": 10.4705133
         }
     },
     {
@@ -1798,6 +1853,11 @@
             "links": [
                 "https://www.studiebolig-odense.dk/apartments/4201020100000702000"
             ]
+        },
+        "location": {
+            "address": "Land\u00f8v\u00e6nget, Haarby, Assens Kommune, 5683, Danmark",
+            "lat": 55.2270068,
+            "lon": 10.1274601
         }
     },
     {
@@ -1849,6 +1909,11 @@
                 "https://www.studiebolig-odense.dk/apartments/4501020100000702000",
                 "https://www.studiebolig-odense.dk/apartments/4501030100000702000"
             ]
+        },
+        "location": {
+            "address": "Langelinie, Fruens B\u00f8ge, Dalum, Odense, Odense Kommune, 5230, Danmark",
+            "lat": 55.3742128,
+            "lon": 10.3790615
         }
     },
     {
@@ -3204,6 +3269,11 @@
                 "Elmelundsvej 4, 5200 Odense V",
                 "Elmelundsvej 4, 5200 Odense V"
             ]
+        },
+        "location": {
+            "address": "4, Elmelundsvej, Bolbro, Odense, Odense Kommune, 5200, Danmark",
+            "lat": 55.3923679,
+            "lon": 10.3301494
         }
     },
     {
@@ -3236,6 +3306,11 @@
             "addresses": [
                 " Munkebjergv\u00e6nget 2, 5230 Odense"
             ]
+        },
+        "location": {
+            "address": "2, Munkebjergv\u00e6nget, Munkebjerg Park, Hunderup, Odense, Odense Kommune, 5230, Danmark",
+            "lat": 55.3720854,
+            "lon": 10.409006
         }
     },
     {
@@ -3272,6 +3347,11 @@
                 "Campusvej 1, 5230 Odense",
                 "Campusvej 1, 5230 Odense"
             ]
+        },
+        "location": {
+            "address": "1, Campusvej, Cortex Park, Odense, Odense Kommune, 5230, Danmark",
+            "lat": 55.3734277,
+            "lon": 10.429092
         }
     }
 ]
