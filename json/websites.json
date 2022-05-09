@@ -312,7 +312,14 @@
                 "address": "2, Munkebjergv\u00e6nget, Munkebjerg Park, Hunderup, Odense, Odense Kommune, 5230, Danmark",
                 "lat": 55.37208578724875,
                 "lon": 10.408962727235975
-            }
+            },
+    "dorms": {
+      "prices": ["2185"],
+      "depositum": ["7105"],
+      "space": ["12"],
+      "addresses": [" Munkebjergvænget 2, 5230 Odense"]
+
+    }
     },
     {
         "name": "Campus Kollegiet",
@@ -326,6 +333,21 @@
                 "address": "Campusvej 1, 5230 Odense",
                 "lat": 55.37339848765355,
                 "lon": 10.428782727235982
-            }
+            },
+    "dorms":{
+      "space": ["22","22","32"],
+      "prices": ["3000","3800","5105"],
+      "links": [
+        "https://campuskollegiet.dk/rooms/single-room/",
+        "https://campuskollegiet.dk/rooms/ease-of-access-room/",
+        "https://campuskollegiet.dk/rooms/  uples-room/"
+      ],
+      "depositum": ["9000","11400","151315"],
+      "addresses": [
+        "Campusvej 1, 5230 Odense",
+        "Campusvej 1, 5230 Odense",
+        "Campusvej 1, 5230 Odense"
+      ]
+    }
     }
 ]
