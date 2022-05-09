@@ -47,7 +47,7 @@
             "address": "Stationsvænget, 5260 Odense",
             "lat": 55.35975549856325,
             "lon": 10.390915615615514
-            }
+        }
     },
     {
         "name": "H. C. \u00d8rsteds Kollegiet",
@@ -74,10 +74,10 @@
             "- 3,5 km til midtbyen. "
         ],
         "location": {
-                "address": "23, Niels Bohrs Alle, 5230",
-                "lat": 55.3725416147696,
-                "lon": 10.403270656071193
-            }
+            "address": "23, Niels Bohrs Alle, 5230",
+            "lat": 55.3725416147696,
+            "lon": 10.403270656071193
+        }
     },
     {
         "name": "Hans Tausen-kollegiet",
@@ -128,10 +128,10 @@
             "Der er mulighed for individuelt at tilk\u00f8be mellempakken eller fuldpakken ved YouSee Kabel TV. "
         ],
         "location": {
-                "address": "Hans Tausens Gade 14, 5000 Odense",
-                "lat": 55.38759341038352,
-                "lon": 10.374434034473435
-            }
+            "address": "Hans Tausens Gade 14, 5000 Odense",
+            "lat": 55.38759341038352,
+            "lon": 10.374434034473435
+        }
     },
     {
         "name": "Kaj Munk Kollegiet",
@@ -141,10 +141,10 @@
         "description": "Kollegiet har en dejlig beliggenhed n\u00e6r Odense \u00c5 og gr\u00f8nne omr\u00e5der. P\u00e5 kollegiet er en hyggelig grillplads, der om sommeren er samlingspunkt for kollegiets beboere.",
         "facilities": [],
         "location": {
-                "address": "Hjallesegade 11, 5260 Odense",
-                "lat": 55.35647435736485,
-                "lon": 10.3836597366065
-            }
+            "address": "Hjallesegade 11, 5260 Odense",
+            "lat": 55.35647435736485,
+            "lon": 10.3836597366065
+        }
     },
     {
         "name": "Lindekollegiet",
@@ -166,10 +166,10 @@
             "Desuden findes v\u00e6rksted, g\u00e6stev\u00e6relse, sauna og solarium. Den n\u00e6rliggende Kongens Have byder p\u00e5 muligheder for spil og afslapning og er v\u00e6rt for koncerter o. l. sommeren igennem"
         ],
         "location": {
-                "address": "Østre Stationsvej 2, 5000 Odense",
-                "lat": 55.40083941360556,
-                "lon": 10.38889929749238
-            }
+            "address": "Østre Stationsvej 2, 5000 Odense",
+            "lat": 55.40083941360556,
+            "lon": 10.38889929749238
+        }
     },
     {
         "name": "Slotsgadekollegiet",
@@ -191,10 +191,10 @@
             "Desuden har kollegiet en l\u00e6kker tagterrasse med grill-plads, hvorfra man kan kigge ud over byen. "
         ],
         "location": {
-                "address": "Slotsgade 17, 5000 Odense",
-                "lat": 55.39689504547153,
-                "lon": 10.383138113742296
-            }
+            "address": "Slotsgade 17, 5000 Odense",
+            "lat": 55.39689504547153,
+            "lon": 10.383138113742296
+        }
     },
     {
         "name": "Tornbjergkollegiet",
@@ -218,10 +218,10 @@
             "Hyggeligt og velholdt f\u00e6lleshus med k\u00f8kken, toilet og bad, der kan benyttes af beboerne til fester, grill-aftener, tv-hygge, f\u00e6llesspisning mm. "
         ],
         "location": {
-                "address": "Glanshatten 2A, 5220 Odense",
-                "lat": 55.36925957157757,
-                "lon": 10.456039683059846
-            }
+            "address": "Glanshatten 2A, 5220 Odense",
+            "lat": 55.36925957157757,
+            "lon": 10.456039683059846
+        }
     },
     {
         "name": "Langelinie Kollegiet",
@@ -230,10 +230,10 @@
         "decoding_function": "decode_kristiansdal",
         "description": "Attraktivt kollegie beliggende t\u00e6t p\u00e5 Centrum, Odense Universitetshospital og Odense \u00c5. Bem\u00e6rk, det er kollegieboliger.",
         "location": {
-                "address": "Langelinie 45, 5230 Odense",
-                "lat": 55.384223997271675,
-                "lon": 10.377616075902402
-            }
+            "address": "Langelinie 45, 5230 Odense",
+            "lat": 55.384223997271675,
+            "lon": 10.377616075902402
+        }
     },
     {
         "name": "\u00c5l\u00f8kkekollegiet",
@@ -252,10 +252,10 @@
             "Vi har et f\u00e6lleshus, hvor der er festlokale med stort k\u00f8kken, og tv-stue. K\u00f8kkenet er veludstyret og tv-stuen har billard, dart og diverse spil, plus k\u00f8leskab til drikkevarer. I k\u00e6lderen har vi sm\u00e5 opbevaringsrum til de ting, man ikke kan have i sin lejlighed. Kollegiet har en dejlig gr\u00e6spl\u00e6ne omgivet af terrasse og buske. Der er grill, bord og b\u00e6nk, havestole, og en overd\u00e6kket pergola. "
         ],
         "location": {
-                "address": "Rugårdsvej 53, 5000 Odense",
-                "lat": 55.399007972917865,
-                "lon": 10.365840798401578
-            }
+            "address": "Rugårdsvej 53, 5000 Odense",
+            "lat": 55.399007972917865,
+            "lon": 10.365840798401578
+        }
     },
     {
         "name": "Harek\u00e6ret",
@@ -272,10 +272,10 @@
             "The common house can be used for parties and other social gatherings \u2013 all requests must be directed towards HD Ejendomme at Phone number: (+45)65902784. Most of the accommodations has a sleeping loft and skylights, which gives the room a bright and light appearance"
         ],
         "location": {
-                "address": "Harekæret 5220, Odense SØ Harekæret",
-                "lat": 55.3647352691486,
-                "lon": 10.471545940730111
-            }
+            "address": "Harekæret 5220, Odense SØ Harekæret",
+            "lat": 55.3647352691486,
+            "lon": 10.471545940730111
+        }
     },
     {
         "name": "Rasmus Raskkollegiet",
@@ -286,10 +286,10 @@
         "facilities": "Kunne du t\u00e6nke dig at bo p\u00e5 et socialt kollegie i natursk\u00f8nne omgivelser? S\u00e5 er Rasmus Raskkollegiet noget for dig. Kollegiet er beliggende i Odense V, t\u00e6t p\u00e5 busforbindelse, den kommende letbane og der er flere muligheder for indk\u00f8b indenfor g\u00e5afstand. Derudover ligger Tietgens Handelsgymnasium lige ved siden af kollegiet. Rasmus Raskkollegiet har mange faciliteter, hvor der er mulighed for at v\u00e6re aktiv og m\u00f8de sine medkollegianere. Bl.a. byder kollegiet p\u00e5 sauna, motionsrum, festlokale og en stor hyggelig kollegiebar, hvor der er rig mulighed for hygge med en bred vifte af spil. Kollegiet har derudover nogle dejlige udeomr\u00e5der med legeplads, beachvolley og gr\u00f8nne omr\u00e5der og kollegiet er derfor ogs\u00e5 velegnet til familier.",
         "description": " Kollegiet er beliggende i Odense V, t\u00e6t p\u00e5 busforbindelse, den kommende letbane og der er flere muligheder for indk\u00f8b indenfor g\u00e5afstand.",
         "location": {
-                "address": "Elmelundsvej 4, 5200 Odense",
-                "lat": 55.392378727175185,
-                "lon": 10.330127428835207
-            }
+            "address": "Elmelundsvej 4, 5200 Odense",
+            "lat": 55.392378727175185,
+            "lon": 10.330127428835207
+        }
     },
     {
         "name": "Thomas B. Thriges Kollegium",
@@ -309,17 +309,17 @@
             "Cykelparkering"
         ],
         "location": {
-                "address": "2, Munkebjergv\u00e6nget, Munkebjerg Park, Hunderup, Odense, Odense Kommune, 5230, Danmark",
-                "lat": 55.37208578724875,
-                "lon": 10.408962727235975
-            },
-    "dorms": {
-      "prices": ["2185"],
-      "depositum": ["7105"],
-      "space": ["12"],
-      "addresses": [" Munkebjergvænget 2, 5230 Odense"]
+            "address": "2, Munkebjergv\u00e6nget, Munkebjerg Park, Hunderup, Odense, Odense Kommune, 5230, Danmark",
+            "lat": 55.37208578724875,
+            "lon": 10.408962727235975
+        },
+        "dorms": {
+            "prices": ["2185"],
+            "depositum": ["7105"],
+            "space": ["12"],
+            "addresses": [" Munkebjergvænget 2, 5230 Odense"]
 
-    }
+        }
     },
     {
         "name": "Campus Kollegiet",
@@ -330,24 +330,24 @@
         "description": "With capacity for 250 students, Campus House spans three linked 14-storey buildings. Thus, Campus House has no \u201crear\u201d side and looks attractive from every angle.",
         "facilities": "\u201cA.P. M\u00f8ller og Hustru Chastine Mc-Kinney M\u00f8llers Fond til almene Formaal\u201d has chosen to give the University of Southern Denmark\u2019s students a new hall of residence, Campus House, as a gift for SDU students. In this connection, the A. P. M\u00f8ller Foundation has established \u201cFonden Universitetskollegiet i Odense\u201d (the university hall of residence foundation in Odense), which owns and has built Campus House. The building was designed by C. F. M\u00f8ller\u2019s architects.\n\nWith capacity for 250 students, Campus House spans three linked 14-storey buildings. Thus, Campus House has no \u201crear\u201d side and looks attractive from every angle. The shape of the building and its spectacular architecture will make it easily recognisable on the campus and signify that there is something different inside here: a hall of residence that will become a striking landmark for the City of Odense and the university",
         "location": {
-                "address": "Campusvej 1, 5230 Odense",
-                "lat": 55.37339848765355,
-                "lon": 10.428782727235982
-            },
-    "dorms":{
-      "space": ["22","22","32"],
-      "prices": ["3000","3800","5105"],
-      "links": [
-        "https://campuskollegiet.dk/rooms/single-room/",
-        "https://campuskollegiet.dk/rooms/ease-of-access-room/",
-        "https://campuskollegiet.dk/rooms/  uples-room/"
-      ],
-      "depositum": ["9000","11400","151315"],
-      "addresses": [
-        "Campusvej 1, 5230 Odense",
-        "Campusvej 1, 5230 Odense",
-        "Campusvej 1, 5230 Odense"
-      ]
-    }
+            "address": "Campusvej 1, 5230 Odense",
+            "lat": 55.37339848765355,
+            "lon": 10.428782727235982
+        },
+        "dorms":{
+            "space": ["22","22","32"],
+            "prices": ["3000","3800","5105"],
+            "links": [
+                "https://campuskollegiet.dk/rooms/single-room/",
+                "https://campuskollegiet.dk/rooms/ease-of-access-room/",
+                "https://campuskollegiet.dk/rooms/  uples-room/"
+            ],
+            "depositum": ["9000","11400","151315"],
+            "addresses": [
+                "Campusvej 1, 5230 Odense",
+                "Campusvej 1, 5230 Odense",
+                "Campusvej 1, 5230 Odense"
+            ]
+        }
     }
 ]
