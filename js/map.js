@@ -19,7 +19,6 @@ function setupMap(){
 
 // called by load_data.js when data is recieved
 function add_markers(data){
-    console.log(data);
 
 	// marker SDU
 	new mapboxgl.Marker({
@@ -29,5 +28,22 @@ function add_markers(data){
 	.setLngLat([10.42804651505347,55.3679072])
 	.setPopup(new mapboxgl.Popup().setHTML("SDU"))
 	.addTo(map);
+
+
+
+    for(i = 0; i < data.length;i++){
+        let place = data[i]
+        let location = place.location
+        // console.log(locations);
+
+
+        new mapboxgl.Marker({
+            color:"red",
+            scale: 0.8
+        })
+            .setLngLat([location.lon,location.lat])
+            .setPopup(new mapboxgl.Popup().setHTML(place.name + ' ' + "<a href=\"pages/Info-pages/" + place.name + ".html\"><img src=\"img/link.png\" style=\"height: 10px;\" alt=\"Link til side\"/></a>"))
+            .addTo(map);
+    }
 }
 
