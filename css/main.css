@@ -79,6 +79,7 @@ header a{
 
 .header{
 	font-family: var(--header-font);
+    margin-bottom: 8px;
 	/*margin-top: 3px;*/
 	/*margin-bottom: 3px;*/
 }

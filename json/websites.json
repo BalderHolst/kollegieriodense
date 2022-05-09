@@ -36,7 +36,7 @@
   {
     "name": "Kaj Munk Kollegiet",
     "link": "https://www.studiebolig-odense.dk/departments/4001",
-    
+    "img": "kajmunk.jpg",
     "decoding_function": "decode_studiebolig_odense",
     "description": "Kollegiet har en dejlig beliggenhed nær Odense Å og grønne områder. På kollegiet er en hyggelig grillplads, der om sommeren er samlingspunkt for kollegiets beboere."
   },
@@ -93,6 +93,7 @@
     "name": "Rasmus Raskkollegiet",
     "img": "Rasmus Raskkollegiet.jpg",
     "link": "https://www.kollegieboligselskabet.dk/vores-afdelinger/rasmus-raskkollegiet/",
+    "redirect": true,
     "decoding_function": "decode_rasmus_rask",
     "facilities": "Kunne du tænke dig at bo på et socialt kollegie i naturskønne omgivelser? Så er Rasmus Raskkollegiet noget for dig. Kollegiet er beliggende i Odense V, tæt på busforbindelse, den kommende letbane og der er flere muligheder for indkøb indenfor gåafstand. Derudover ligger Tietgens Handelsgymnasium lige ved siden af kollegiet. Rasmus Raskkollegiet har mange faciliteter, hvor der er mulighed for at være aktiv og møde sine medkollegianere. Bl.a. byder kollegiet på sauna, motionsrum, festlokale og en stor hyggelig kollegiebar, hvor der er rig mulighed for hygge med en bred vifte af spil. Kollegiet har derudover nogle dejlige udeområder med legeplads, beachvolley og grønne områder og kollegiet er derfor også velegnet til familier.",
     "description": " Kollegiet er beliggende i Odense V, tæt på busforbindelse, den kommende letbane og der er flere muligheder for indkøb indenfor gåafstand."

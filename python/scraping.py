@@ -84,12 +84,8 @@ def do_it():
 
 		website = website | decode(website)
 
-		if 'dorms' in website.keys():
-			website['locations'] = find_locations(website['dorms']['addresses'])
-
 		data.append(website)
 
-		print() #adds empty line
 
 
 
@@ -97,7 +93,7 @@ def do_it():
 	# 	data = add_locations(data)
 
 	with open('../json/scraped.json','w') as f:
-		json.dump(data,f)
+		json.dump(data,f,indent=4)
 
 
 

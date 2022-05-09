@@ -3,9 +3,9 @@ let data = undefined;
 // get data from database and run these functions
 getData().then((data) => {
     data = data;
-    createCardGrid(data);
-    console.log(data);
-	//add_markers(data)
+    if (typeof createCardGrid === "function") createCardGrid(data);
+	if (typeof add_markers === "function") add_markers(data);
+    //console.log(data);
 })
 
 
