@@ -1,6 +1,7 @@
 {
     "name": "",
     "description": "",
+    "img": "",
     "link": "",
     "decoding_function": "decode_studiebolig_odense"
 }
