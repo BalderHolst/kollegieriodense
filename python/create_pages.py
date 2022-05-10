@@ -107,7 +107,7 @@ def create_page(data):
 				
 		with div(cls="text-box"):
 			h3("Grundplan for værrelset", cls="header")
-			p("Nedenfor kan du vælge et bestemt værelse, og se dets faciliteter og grundplan",cls="text")
+			p("Nedenfor kan du vælge et bestemt værelse, og se dets faciliteter og grundplan.",cls="text")
 			with div(cls="floorplans-container margin-top"):
 				with div(cls="floorplans"):
 

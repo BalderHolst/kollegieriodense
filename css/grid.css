@@ -17,31 +17,32 @@
 
 .sorting {
     position: relative;
-    height: 2.4em;
+    text-align: right;
+    margin: 15px calc(var(--space) + var(--extra-space));
 }
 
-.sorting h4 {
-    top: 7px;
-    position: absolute;
-    margin: 0;
-    padding: 0;
-}
 
 .sorting .options {
-    position: absolute;
-    right: 15px;
-    list-style-type: none;
+    height: 100%;
+    position: relative;
 }
 
 .sorting .option{
-    padding: 1px 5px;
-    position: relative;
+    padding: 5px;
+    height: 100%;
     display: inline-block;
-    margin: 0 15px;
     cursor: pointer;
     border: 2px solid var(--accent-color);
     border-radius: var(--corner-radius);
+	box-shadow: var(--shadow);
+	transition: var(--general-delay);
 }
+
+.option:hover{
+	background-color: #9dccdbAA;
+    border: 2px solid #9dccdbAA;
+}
+
 
 .selected {
     background: var(--accent-color);
@@ -223,7 +224,7 @@ div.flipped div.card-back{
 	font-family: var(--header-font);
 	color: black;
 	text-align: center;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 .to-page:hover{
