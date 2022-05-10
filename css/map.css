@@ -1,0 +1,15 @@
+.mapboxgl-marker {
+    cursor: pointer;
+}
+
+.place_img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.link {
+    width: 15px;
+    height: 15px;
+    margin: 0 6px;
+}

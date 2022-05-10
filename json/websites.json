@@ -2,22 +2,10 @@
     {
         "name": "Blangstedg\u00e5rdkollegiet",
         "link": "https://www.studiebolig-odense.dk/departments/314",
+        "alt-link": "https://www.kollegieboligselskabet.dk/vores-afdelinger/blangstedgaardkollegiet",
         "img": "blangstedgaardkollegiet.jpg",
         "decoding_function": "decode_studiebolig_odense",
-        "description": "Nyere r\u00e6kkehuslignende ungdomsboliger.",
-        "facilities": [
-            "50 beboere",
-            "20 etv\u00e6relses-, 5 halvandenv\u00e6relses- og 10 tov\u00e6relseslejligheder",
-            "Eget k\u00f8kken og bad",
-            "Netv\u00e6rk med internetopkobling",
-            "R\u00f8gfri",
-            "F\u00e6llesantenne, YouSee Kabel TV grundpakke",
-            "Individuel afregning af varmeforbrug",
-            "Lejligheder fra 23,5 - 47m2. ",
-            "Kollegiet ligger i et stille natursk\u00f8nt omr\u00e5de. Der er en f\u00e6lles grillplads og volleyball-bane, som benyttes om sommeren. ",
-            "Der er et f\u00e6llesrum, hvor der afholdes spil- og quiz-aftener og cirka to f\u00e6llesfester hvert semester. ",
-            "Der er f\u00e6llesvaskeri og mulighed for at leje f\u00e6llesrum til private arrangementer. Kun 10 minutter p\u00e5 cykel til Bilka og Roseng\u00e5rdscentret. "
-        ],
+        "description": "Rækkehuslignende ungdomsboliger i naturskønne og rolige omgivelser. Boligerne ligger i cykelafstand fra Syddansk Universitet, Bilka, og Rosengårdscenteret som er Danmarks største shopping center med tilhørende biograf. Der er god mulighed for hygge i fællesrummet, hvor der ofte afholdes spil- og quiz aftener og fællesfester.",
         "location": {
             "address": "Stammen 71, 5220 Odense",
             "lat": 55.38504607861534,
@@ -30,19 +18,6 @@
         "img": "Carl_Nielsen_Kollegiet.jpg",
         "decoding_function": "decode_studiebolig_odense",
         "description": "Kollegiet har eget f\u00e6lleshus, hvor der er gode f\u00e6llesrum med tv, k\u00f8kken og aktivitetsrum med bordtennis og dartspil. Der bliver l\u00f8bende afholdt f\u00e6llesarrangementer p\u00e5 kollegiet, s\u00e5som tour de chambre.",
-        "facilities": [
-            "48 beboere",
-            "24 etv\u00e6relses lejligheder",
-            "12 tov\u00e6relses lejligheder",
-            "Eget k\u00f8kken og bad",
-            "Netv\u00e6rk med 100 Mb internetopkobling",
-            "F\u00e6llesantenne",
-            "F\u00e6llesvaskeri",
-            "R\u00f8gfri",
-            "Individuel afregning af varmeforbrug",
-            "Lejligheder fra 23,5 - 47m2",
-            "Kollegiet har eget f\u00e6lleshus, hvor der er gode f\u00e6llesrum med tv, k\u00f8kken og aktivitetsrum med bordtennis og dartspil. Der bliver l\u00f8bende afholdt f\u00e6llesarrangementer p\u00e5 kollegiet, s\u00e5som tour de chambre. "
-        ],
         "location": {
             "address": "Stationsvænget, 5260 Odense",
             "lat": 55.35975549856325,
@@ -55,24 +30,6 @@
         "img": "H.C. Orstedkollegiet.jpg",
         "decoding_function": "decode_studiebolig_odense",
         "description": "H.C. \u00d8rstedkollegiet ligger p\u00e5 Niels Bohrs All\u00e9 i Odense. Det ligger t\u00e6t ved Hjallese, ca. 3,5 km. fra byens centrum, 3 km. fra Roseng\u00e5rdcentret og er centralt placeret i forhold til studiesteder og indk\u00f8bsmuligheder.",
-        "facilities": [
-            "H. C. \u00d8rstedskollegiet best\u00e5r af 519 boliger fordelt i 3 blokke. \u00a0 Hvor blok 1 og 3 best\u00e5r af enkeltv\u00e6relses boliger fordelt p\u00e5 16 f\u00e6llesk\u00f8kkener, med 15 beboer p\u00e5 hvert k\u00f8kken. ",
-            "Blok 2 best\u00e5r af 40 2-v\u00e6relses lejligheder med eget k\u00f8kken, toilet, bad og en lille have. BEM\u00c6RK: boligerne i blok 2 kr\u00e6ver 2 beboere, de er ikke delevenlige men henvender sig til par. ",
-            "Kollegiet \u00e5bnede i 1968 og er l\u00f8bende vedligeholdt, senest er yderd\u00f8re og vinduer i blok 1 og 3 udskiftet med nye energivenlige 3 lags glas elementer i 2021. ",
-            "Kollegiet er et vartegn for mange af de som har l\u00e6st i Odense gennem \u00e5rene og holder mange af de gamle traditioner i h\u00e6vd. ",
-            "Et sted med f\u00e6llesskab i centrum med mange f\u00e6lles faciliteter og et hav af sociale aktiviteter mellem beboere",
-            "Kollegiet tilbyder sm\u00e5, billige boliger til studerende med fokus p\u00e5 det sociale milj\u00f8. ",
-            "Faciliteterne p\u00e5 kollegiet inkluderer:",
-            "- HUSET: f\u00e6lles areal med bordfodboldbord, pool bord, kollegiets bar som drives af beboerne, m\u00f8delokale og kollegiets musiklokale. ",
-            "- Udend\u00f8rs: beachvolley bane, fodboldbane, basketball bane, gr\u00e6spl\u00e6ne og bord-b\u00e6nkes\u00e6t samt f\u00e6lles grill og grill areal. ",
-            "- Blok 1, K\u00e6lder: kollegiets hobby bryggeri. ",
-            "- Blok 3, K\u00e6lder: Motions rum med udstyr til styrke og cardio tr\u00e6ning. ",
-            "- Kollegiet ligger som nabo til UCL campus Niels Bohrs All\u00e9",
-            "- 1,5 km fra SDU Campusvej, adgang via oplyst stisystem uden om Niels Bohrs All\u00e9 ca. 10 min. P\u00e5 Cykel. ",
-            "- 500 meter fra Pizzaria",
-            "- 5 minutter fra indk\u00f8b (Lidl og Dagli\u2019 Brugsen)",
-            "- 3,5 km til midtbyen. "
-        ],
         "location": {
             "address": "23, Niels Bohrs Alle, 5230",
             "lat": 55.3725416147696,
@@ -85,21 +42,6 @@
         "img": "Hans Tausen kollegiet.jpg",
         "decoding_function": "decode_studiebolig_odense",
         "description": "Kollegiet har en dejlig beliggenhed midt i Odense centrum, t\u00e6t p\u00e5 baneg\u00e5rden og indk\u00f8bsmuligheder.",
-        "facilities": [
-            "38 beboere",
-            "et-, halvanden-, to- og trev\u00e6relseslejligheder",
-            "Eget k\u00f8kken og bad",
-            "Netv\u00e6rk med internetopkobling via 100 Mb fiberforbindelse",
-            "F\u00e6llesantenne med YouSee mellempakke",
-            "F\u00e6llesvaskeri",
-            "R\u00f8gfri",
-            "Velegnet til b\u00f8rnefamilier",
-            "Individuel afregning af varmeforbrug",
-            "Lejligheder fra 25,8 \u00ad 83,2 m2. ",
-            "Kollegiet har en dejlig beliggenhed midt i Odense centrum, t\u00e6t p\u00e5 baneg\u00e5rden og indk\u00f8bsmuligheder. ",
-            "Der er f\u00e6llesrum med billiard, tv-stue og k\u00f8kken. ",
-            "Kollegiet er desuden meget velegnet til b\u00f8rnefamilier, med bla. en legestue til b\u00f8rn og en lukket b\u00f8rnevenlig have. "
-        ],
         "location": {
             "address": "Hans Tausens Gade 14, 5000 Odense",
             "lat": 55.3991828065611,
@@ -111,22 +53,6 @@
         "link": "https://www.studiebolig-odense.dk/departments/304",
         "img": "jbw.jpg",
         "decoding_function": "decode_studiebolig_odense",
-        "facilities": [
-            "D\u00f8rtelefon",
-            "Eget k\u00f8kken med k\u00f8le/fryseskab og komfur med ovn",
-            "Eget bad",
-            "F\u00e6llesantenne med YouSee TV grundpakke",
-            "F\u00e6llesvaskeri",
-            "Netv\u00e6rk med 100 Mb internetopkobling",
-            "Elevator",
-            "R\u00f8gfri",
-            "Individuel forbrugsafregning",
-            "Enkelte handicapvenlige lejligheder",
-            "Lejligheder fra 38 - 49,9 m2",
-            "Kollegiet har en dejlig beliggenhed n\u00e6r Odense \u00c5 og gr\u00f8nne omr\u00e5der. P\u00e5 kollegiet er en hyggelig grillplads, der om sommeren er samlingspunkt for kollegiets beboere. ",
-            "Der er to f\u00e6llesrum, der bl. a. benyttes til fester, tv-hygge, bordfodbold f\u00e6llesspisning mm. Kollegiet har to grupperum med plads og faciliteter til studiearbejde. ",
-            "Der er mulighed for individuelt at tilk\u00f8be mellempakken eller fuldpakken ved YouSee Kabel TV. "
-        ],
         "location": {
             "address": "Hans Tausens Gade 14, 5000 Odense",
             "lat": 55.38759341038352,
@@ -139,7 +65,6 @@
         "img": "kajmunk.jpg",
         "decoding_function": "decode_studiebolig_odense",
         "description": "Kollegiet har en dejlig beliggenhed n\u00e6r Odense \u00c5 og gr\u00f8nne omr\u00e5der. P\u00e5 kollegiet er en hyggelig grillplads, der om sommeren er samlingspunkt for kollegiets beboere.",
-        "facilities": [],
         "location": {
             "address": "Hjallesegade 11, 5260 Odense",
             "lat": 55.35647435736485,
@@ -151,20 +76,6 @@
         "link": "https://www.studiebolig-odense.dk/departments/312",
         "decoding_function": "decode_studiebolig_odense",
         "description": "Lindekollegiets centrale beliggenhed giver nem adgang til bus, tog og rutebil. \u00c5ret igennem er kollegiets f\u00e6llesrum med bar, poolbord m.v. centrum for sociale aktiviteter. Om sommeren kan man grille og hygge sig i g\u00e5rden.",
-        "facilities": [
-            "50 beboere",
-            "et-, halvanden- og tov\u00e6relseslejligheder",
-            "Eget k\u00f8kken og bad",
-            "Netv\u00e6rk med internetopkobling",
-            "F\u00e6llesantenne",
-            "F\u00e6llesvaskeri",
-            "R\u00f8gfri",
-            "Individuel afregning af varmeforbrug",
-            "D\u00f8rtelefon",
-            "Lejligheder fra 19,8 \u00ad 44,9 m2. ",
-            "Lindekollegiets centrale beliggenhed giver nem adgang til bus, tog og rutebil. \u00c5ret igennem er kollegiets f\u00e6llesrum med bar, poolbord m. v. centrum for sociale aktiviteter. Om sommeren kan man grille og hygge sig i g\u00e5rden. ",
-            "Desuden findes v\u00e6rksted, g\u00e6stev\u00e6relse, sauna og solarium. Den n\u00e6rliggende Kongens Have byder p\u00e5 muligheder for spil og afslapning og er v\u00e6rt for koncerter o. l. sommeren igennem"
-        ],
         "location": {
             "address": "Østre Stationsvej 2, 5000 Odense",
             "lat": 55.40083941360556,
@@ -176,20 +87,6 @@
         "link": "https://www.studiebolig-odense.dk/departments/313",
         "decoding_function": "decode_studiebolig_odense",
         "description": "Kollegiet har en god beliggenhed i Odense centrum, lige ved g\u00e5gaderne, og ikke langt fra baneg\u00e5rden.",
-        "facilities": [
-            "30 beboere",
-            "28 et- og tov\u00e6relseslejligheder",
-            "Egen kogeniche og bad",
-            "Netv\u00e6rk med internetopkobling",
-            "F\u00e6llesantenne med YouSee grundpakke",
-            "F\u00e6llesvaskeri",
-            "R\u00f8gfri",
-            "Individuel afregning af forbrug",
-            "Lejligheder fra 23,7 \u00ad 49,3 m2. ",
-            "Kollegiet har en god beliggenhed i Odense centrum, lige ved g\u00e5gaderne, og ikke langt fra baneg\u00e5rden. ",
-            "Kollegiet har to f\u00e6llesrum, et med tv-stue og et i k\u00e6lderen. ",
-            "Desuden har kollegiet en l\u00e6kker tagterrasse med grill-plads, hvorfra man kan kigge ud over byen. "
-        ],
         "location": {
             "address": "Slotsgade 17, 5000 Odense",
             "lat": 55.39689504547153,
@@ -202,21 +99,6 @@
         "img": "Tornbjergkollegiet.jpg",
         "decoding_function": "decode_studiebolig_odense",
         "description": "Socialt kollegium beliggende t\u00e6t p\u00e5 universitetet, i dejligt gr\u00f8nt omr\u00e5de, med stort udend\u00f8rs f\u00e6llesareal. Hvert v\u00e6relse best\u00e5r af 20m2 fordelt p\u00e5 13m2 v\u00e6relse og 7m2 hems.",
-        "facilities": [
-            "48 beboere",
-            "Huse med 4 v\u00e6relser",
-            "F\u00e6llesk\u00f8kken",
-            "2 badev\u00e6relser per hus",
-            "Overd\u00e6kket glasveranda",
-            "V\u00e6relserne udlejes enkeltvis",
-            "Netv\u00e6rk med 100 Mb internetopkobling",
-            "F\u00e6llesantenne med YouSee fuldpakke",
-            "F\u00e6llesvaskeri",
-            "R\u00f8gfri",
-            "V\u00e6relse 20 m2",
-            "Socialt kollegium beliggende t\u00e6t p\u00e5 universitetet, i dejligt gr\u00f8nt omr\u00e5de, med stort udend\u00f8rs f\u00e6llesareal. Hvert v\u00e6relse best\u00e5r af 20m2 fordelt p\u00e5 13m2 v\u00e6relse og 7m2 hems. ",
-            "Hyggeligt og velholdt f\u00e6lleshus med k\u00f8kken, toilet og bad, der kan benyttes af beboerne til fester, grill-aftener, tv-hygge, f\u00e6llesspisning mm. "
-        ],
         "location": {
             "address": "Glanshatten 2A, 5220 Odense",
             "lat": 55.36925957157757,
@@ -240,17 +122,6 @@
         "link": "https://www.studiebolig-odense.dk/departments/310",
         "decoding_function": "decode_studiebolig_odense",
         "description": "Vi har et f\u00e6lleshus, hvor der er festlokale med stort k\u00f8kken, og tv-stue. K\u00f8kkenet er veludstyret og tv-stuen har billard, dart og diverse spil, plus k\u00f8leskab til drikkevarer. I k\u00e6lderen har vi sm\u00e5 opbevaringsrum til de ting, man ikke kan have i sin lejlighed. Kollegiet har en dejlig gr\u00e6spl\u00e6ne omgivet af terrasse og buske. Der er grill, bord og b\u00e6nk, havestole, og en overd\u00e6kket pergola.",
-        "facilities": [
-            "46 beboere",
-            "\u00e9t- og tov\u00e6relseslejligheder",
-            "Eget k\u00f8kken og bad",
-            "Netv\u00e6rk med internetopkobling via 100Mb fiberforbindelse",
-            "Beboer s\u00f8rger selv for Tv-signal via Boxer, streaming etc. ",
-            "F\u00e6llesvaskeri",
-            "R\u00f8gfri",
-            "Lejligheder fra 26,7 til 55,4 m2. ",
-            "Vi har et f\u00e6lleshus, hvor der er festlokale med stort k\u00f8kken, og tv-stue. K\u00f8kkenet er veludstyret og tv-stuen har billard, dart og diverse spil, plus k\u00f8leskab til drikkevarer. I k\u00e6lderen har vi sm\u00e5 opbevaringsrum til de ting, man ikke kan have i sin lejlighed. Kollegiet har en dejlig gr\u00e6spl\u00e6ne omgivet af terrasse og buske. Der er grill, bord og b\u00e6nk, havestole, og en overd\u00e6kket pergola. "
-        ],
         "location": {
             "address": "Rugårdsvej 53, 5000 Odense",
             "lat": 55.399007972917865,
@@ -263,14 +134,6 @@
         "link": "https://www.studiebolig-odense.dk/departments/2204?language=en",
         "decoding_function": "decode_studiebolig_odense",
         "description": "Beliggenheden t\u00e6t p\u00e5 indk\u00f8bsmuligheder og Syddansk Universitet",
-        "facilities": [
-            "The dormitory is located close to shopping and the University of Southern Denmark (SDU)",
-            "Water, heat and electricity is settled directly to the utility company",
-            "A common house",
-            "Shared laundry facilities (pay per use)",
-            "All accommodation has a small garden and terrace",
-            "The common house can be used for parties and other social gatherings \u2013 all requests must be directed towards HD Ejendomme at Phone number: (+45)65902784. Most of the accommodations has a sleeping loft and skylights, which gives the room a bright and light appearance"
-        ],
         "location": {
             "address": "Harekæret 5220, Odense SØ Harekæret",
             "lat": 55.3647352691486,
@@ -328,7 +191,6 @@
         "decoding_function": false,
         "redirect": true,
         "description": "With capacity for 250 students, Campus House spans three linked 14-storey buildings. Thus, Campus House has no \u201crear\u201d side and looks attractive from every angle.",
-        "facilities": "\u201cA.P. M\u00f8ller og Hustru Chastine Mc-Kinney M\u00f8llers Fond til almene Formaal\u201d has chosen to give the University of Southern Denmark\u2019s students a new hall of residence, Campus House, as a gift for SDU students. In this connection, the A. P. M\u00f8ller Foundation has established \u201cFonden Universitetskollegiet i Odense\u201d (the university hall of residence foundation in Odense), which owns and has built Campus House. The building was designed by C. F. M\u00f8ller\u2019s architects.\n\nWith capacity for 250 students, Campus House spans three linked 14-storey buildings. Thus, Campus House has no \u201crear\u201d side and looks attractive from every angle. The shape of the building and its spectacular architecture will make it easily recognisable on the campus and signify that there is something different inside here: a hall of residence that will become a striking landmark for the City of Odense and the university",
         "location": {
             "address": "Campusvej 1, 5230 Odense",
             "lat": 55.37339848765355,
@@ -349,5 +211,12 @@
                 "Campusvej 1, 5230 Odense"
             ]
         }
+    },
+    {
+        "name": "Bredstedgadekollegiet",
+        "description": "Bredstedgadekollegiet ligger i centrum af Odense og blot 3 minutters gang fra Odense Banegård og indkøbsmuligheder i det hyggelige Skibhuskvarter. Kollegiet tilbyder gode muligheder for samvær med andre beboere i form af et lækkert fællesrum med fredagsbar, tv-stue, billard- og fodboldbord, og sauna.",
+        "link": "https://www.studiebolig-odense.dk/departments/306",
+        "alt-link": "https://www.kollegieboligselskabet.dk/vores-afdelinger/bredstedgadekollegiet/",
+        "decoding_function": "decode_studiebolig_odense"
     }
 ]
