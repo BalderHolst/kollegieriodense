@@ -28,6 +28,7 @@
     {
         "name": "H. C. \u00d8rsteds Kollegiet",
         "link": "https://www.studiebolig-odense.dk/departments/4301?page=1&language=da",
+        "alt-link": "https://www.hcokollegiet.dk/",
         "img": "H.C. Orstedkollegiet.jpg",
         "decoding_function": "decode_studiebolig_odense",
         "description": "H.C. \u00d8rstedkollegiet ligger p\u00e5 Niels Bohrs All\u00e9 i Odense. Det ligger t\u00e6t ved Hjallese, ca. 3,5 km. fra byens centrum, 3 km. fra Roseng\u00e5rdcentret og er centralt placeret i forhold til studiesteder og indk\u00f8bsmuligheder.",
