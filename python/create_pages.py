@@ -14,7 +14,7 @@ def save_file(path,text):
 
 def makeTables(data):
 
-	with div(cls="tables") as d:
+	with div(cls="tables margin-top") as d:
 
 		for i in range(len(data['dorms']['own'])):
 			
@@ -50,9 +50,7 @@ def makeTables(data):
 						div()
 	return(d)
 
-def create_page(data):
-	doc = dominate.document(title = data['name']) 
-
+def createHead(doc):
 	with doc.head:
 		meta(charset="utf-8")
 
@@ -66,8 +64,7 @@ def create_page(data):
 		link(rel="preconnect",href="https://fonts.gstatic.com",crossorigin=True)
 		link(href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap",rel="stylesheet")
 
-
-
+def createHeader(doc):
 	with doc:
 		with header():
 			with a(href="../../index.html"):
@@ -77,57 +74,68 @@ def create_page(data):
 				a("kort",cls="nav",href="../map.html")
 				a("om",cls="nav",href="../om.html")
 
+
+
+
+def create_page(data):
+	doc = dominate.document(title = data['name']) 
+
+	createHead(doc)
+	createHeader(doc)
+
 	with doc:
 		with div(cls="text-box"):
-			with h2(data['name'],cls="header"):
-				with a(href=data['link'],target="_blank"):
+			with h2(data['name'], cls="header"):
+				with a(href=data['link'], target="_blank"):
 					img(src='../../img/link.png', style="height: 0.7em;")
-			
-			with div(cls="cols"):
+		
 
-				if('facilities' in data.keys()):
-					if(type(data['facilities']) == list):
-						with ul(cls="list facilities"):
-							for item in data['facilities']:
-								li(item,cls="list-item")
-					else:
-						div(data['facilities'],cls="facilities")
+			if('description' in data):
+				p(data['description'],cls="text")
+
+			if('facilities' in data.keys()):
+				h4("Faciliteter", cls="header margin-top")
+				if(type(data['facilities']) == list):
+					with ul(cls="list facilities"):
+						for item in data['facilities']:
+							li(item, cls="list-item text")
 				else:
-					div()
+					div(data['facilities'], cls="facilities")
+			else:
+				div()
 
 				
-
-				# with div(cls="right"):
-
-
+		with div(cls="text-box"):
+			h3("Grundplan for værrelset", cls="header")
+			p("Nedenfor kan du vælge et bestemt værelse, og se dets faciliteter og grundplan",cls="text")
+			with div(cls="floorplans-container margin-top"):
 				with div(cls="floorplans"):
 
 						if(len(data['dorms']['floorplans']) > 0):
-							for i,floorplan in enumerate(data['dorms']['floorplans']):
-								a(img(src=floorplan,id=f"img{i}",cls="floorplan"),href=floorplan,target="_blank")
+							for i, floorplan in enumerate(data['dorms']['floorplans']):
+								a(img(src=floorplan, id=f"img{i}", cls="floorplan"),href=floorplan,target="_blank")
 						elif 'img' in data.keys():
 							img(src=data['img'])
 						else:
 							img(src="../../img/no_image.jpg")
 
 
-				div("Nedenfor kan du vælge et bestemt værelse, og se dets faciliteter og grundplan",cls="how-to")
 
-				if('own' in data['dorms'].keys()):
+			if('own' in data['dorms'].keys()):
 					makeTables(data)
 
 			with div(cls="options-container"):
 				
 				with div(cls="table-headers"):
-						div("Adresse",cls="header addresses")
-						div("Størrelse",cls="header")
-						div("Værrelser",cls="header")
-						div("Leje",cls="header")
+						div("Adresse",cls="header addresses col-name")
+						div("Størrelse",cls="header col-name")
+						div("Værrelser",cls="header col-name")
+						div("Leje",cls="header col-name")
 
 						if('depositum' in data['dorms'].keys()):
-							div("Depositum",cls="header")
+							div("Depositum",cls="header col-name")
 						elif('fee' in data['dorms'].keys()):
-							div("Depositum",cls="header")
+							div("Depositum",cls="header col-name")
 
 				for i in range(len(data['dorms']['addresses'])):
 					with div(id=f"option{i}",onclick=f"select({i});",cls="option"):
@@ -144,6 +152,19 @@ def create_page(data):
 						# print(len(data['dorms']['links']))
 						if('links' in data['dorms'].keys()):	
 							a("Til side",id=f"selector{i}",cls="selector",href=data['dorms']['links'][i],target = "_blank")
+
+		with div(cls="text-box"):
+			h3("Links",cls="header")
+			p("Dette er hjemmesiden dataen er scrapet fra:", cls="text")
+			with p(" - "):
+				a(data['link'], href=data['link'], cls="text", target="_blank")
+
+			if("alt-link" in data):
+				p("Link til kollegiets egnen hjemmeside", cls="text margin-top")
+				with p(" - "):
+					a(data['alt-link'], href=data['alt-link'], cls="text", target="_blank")
+
+
 
 
 
