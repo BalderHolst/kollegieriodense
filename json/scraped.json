@@ -1906,8 +1906,21 @@
         "link": "https://www.studiebolig-odense.dk/departments/302?language=da",
         "alt-link": "https://www.kollegieboligselskabet.dk/vores-afdelinger/rasmus-raskkollegiet/",
         "redirect": false,
-        "decoding_function": "decode_rasmus_rask",
-        "facilities": "Kunne du t\u00e6nke dig at bo p\u00e5 et socialt kollegie i natursk\u00f8nne omgivelser? S\u00e5 er Rasmus Raskkollegiet noget for dig. Kollegiet er beliggende i Odense V, t\u00e6t p\u00e5 busforbindelse, den kommende letbane og der er flere muligheder for indk\u00f8b indenfor g\u00e5afstand. Derudover ligger Tietgens Handelsgymnasium lige ved siden af kollegiet. Rasmus Raskkollegiet har mange faciliteter, hvor der er mulighed for at v\u00e6re aktiv og m\u00f8de sine medkollegianere. Bl.a. byder kollegiet p\u00e5 sauna, motionsrum, festlokale og en stor hyggelig kollegiebar, hvor der er rig mulighed for hygge med en bred vifte af spil. Kollegiet har derudover nogle dejlige udeomr\u00e5der med legeplads, beachvolley og gr\u00f8nne omr\u00e5der og kollegiet er derfor ogs\u00e5 velegnet til familier.",
+        "decoding_function": "decode_studiebolig_odense",
+        "facilities": [
+            "Kombinerede tov\u00e6relses lejligheder m. f\u00e6lles bad og k\u00f8kken",
+            "Netv\u00e6rk med internetopkobling, fiberforbindelse",
+            "F\u00e6llesvaskeri",
+            "Vand og el er inkluderet i huslejen p\u00e5 alle boliger undtagen med adresserne 26xx og 27xx",
+            "Lejligheder fra 24 \u00adtil 59 m2",
+            "R\u00f8gfri",
+            "Specielle lejligheder til musikstuderende",
+            "Udenlandske studerende",
+            "Internationalt milj\u00f8. ",
+            "Kollegiet ligger i natursk\u00f8nne omgivelser vest for Odense centrum og lige ved siden af Tietgenskolen, Odense L\u00e6rerseminarium og P\u00e6dagogseminariet. ",
+            "Der er mange faciliteter s\u00e5som sauna, motionsrum, lokaler til brug for sammenkomster og en stor hyggelig kollegiebar. I baren er der mulighed for at m\u00f8de andre beboere, l\u00e6se dagens avis, spille en bred vifte af spil og f\u00e5 lidt til ganen. Kollegiet er meget velegnet for familier, da der b\u00e5de er legeplads og mange gr\u00f8nne omr\u00e5der, som gr\u00e6nser op til. Folkeskole og sv\u00f8mmehal ligger kun 300 m fra kollegiet. ",
+            "V\u00e6r opm\u00e6rksom p\u00e5 at plantegningerne p\u00e5 de \u00bd - kombinerede boliger svarer til 2 boliger, med delt k\u00f8kken og bad. Det kan ikke p\u00e5 forh\u00e5nd oplyses hvilket af v\u00e6relserne du f\u00e5r. "
+        ],
         "description": " Kollegiet er beliggende i Odense V, t\u00e6t p\u00e5 busforbindelse, den kommende letbane og der er flere muligheder for indk\u00f8b indenfor g\u00e5afstand.",
         "location": {
             "address": "Elmelundsvej 4, 5200 Odense",
@@ -1915,14 +1928,323 @@
             "lon": 10.330127428835207
         },
         "dorms": {
-            "rooms": [],
-            "own": [],
-            "shared": [],
-            "prices": [],
-            "depositum": [],
-            "space": [],
+            "prices": [
+                "1,777",
+                "1,777",
+                "1,777",
+                "1,781",
+                "2,092",
+                "2,237",
+                "2,447",
+                "2,485",
+                "2,515",
+                "2,516",
+                "2,521",
+                "2,540",
+                "3,193",
+                "3,379",
+                "3,379",
+                "3,490",
+                "3,641",
+                "3,641",
+                "3,651",
+                "4,094",
+                "4,525",
+                "4,749",
+                "4,800",
+                "4,905",
+                "5,168"
+            ],
+            "space": [
+                "19,0",
+                "19,0",
+                "19,0",
+                "19,0",
+                "24,0",
+                "23,0",
+                "27,0",
+                "25,0",
+                "28,0",
+                "28,0",
+                "27,0",
+                "29,0",
+                "36,0",
+                "42,0",
+                "42,0",
+                "35,0",
+                "37,0",
+                "37,0",
+                "38,0",
+                "46,0",
+                "46,0",
+                "52,0",
+                "52,0",
+                "56,0",
+                "53,0"
+            ],
+            "depositum": [
+                "5,331",
+                "5,331",
+                "5,331",
+                "5,343",
+                "6,276",
+                "6,711",
+                "7,341",
+                "7,455",
+                "7,545",
+                "7,548",
+                "7,563",
+                "7,620",
+                "9,579",
+                "10,137",
+                "10,137",
+                "10,470",
+                "10,923",
+                "10,923",
+                "10,953",
+                "12,282",
+                "13,575",
+                "14,247",
+                "14,400",
+                "14,715",
+                "15,504"
+            ],
             "floorplans": [],
-            "addresses": []
+            "rooms": [
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "2",
+                "2",
+                "2",
+                "2",
+                "2",
+                "2",
+                "2",
+                "2",
+                "2",
+                "3",
+                "3",
+                "3"
+            ],
+            "addresses": [
+                "Elmelundsvej 5200, Odense V Rasmus Raskkollegiet",
+                "Elmelundsvej 5200, Odense V Rasmus Raskkollegiet",
+                "Elmelundsvej 5200, Odense V Rasmus Raskkollegiet",
+                "Elmelundsvej 5200, Odense V Rasmus Raskkollegiet",
+                "Elmelundsvej 5200, Odense V Rasmus Raskkollegiet",
+                "Elmelundsvej 5200, Odense V Rasmus Raskkollegiet",
+                "Elmelundsvej 5200, Odense V Rasmus Raskkollegiet",
+                "Elmelundsvej 5200, Odense V Rasmus Raskkollegiet",
+                "Elmelundsvej 5200, Odense V Rasmus Raskkollegiet",
+                "Elmelundsvej 5200, Odense V Rasmus Raskkollegiet",
+                "Elmelundsvej 5200, Odense V Rasmus Raskkollegiet",
+                "Elmelundsvej 5200, Odense V Rasmus Raskkollegiet",
+                "Elmelundsvej 5200, Odense V Rasmus Raskkollegiet",
+                "Elmelundsvej 5200, Odense V Rasmus Raskkollegiet",
+                "Elmelundsvej 5200, Odense V Rasmus Raskkollegiet",
+                "Elmelundsvej 5200, Odense V Rasmus Raskkollegiet",
+                "Elmelundsvej 5200, Odense V Rasmus Raskkollegiet",
+                "Elmelundsvej 5200, Odense V Rasmus Raskkollegiet",
+                "Elmelundsvej 5200, Odense V Rasmus Raskkollegiet",
+                "Elmelundsvej 5200, Odense V Rasmus Raskkollegiet",
+                "Elmelundsvej 5200, Odense V Rasmus Raskkollegiet",
+                "Elmelundsvej 5200, Odense V Rasmus Raskkollegiet",
+                "Elmelundsvej 5200, Odense V Rasmus Raskkollegiet",
+                "Elmelundsvej 5200, Odense V Rasmus Raskkollegiet",
+                "Elmelundsvej 5200, Odense V Rasmus Raskkollegiet"
+            ],
+            "links": [
+                "https://www.studiebolig-odense.dk/apartments/0302011803020102902?language=da",
+                "https://www.studiebolig-odense.dk/apartments/0302010803020102902?language=da",
+                "https://www.studiebolig-odense.dk/apartments/0302011603020102902?language=da",
+                "https://www.studiebolig-odense.dk/apartments/0302011503020102902?language=da",
+                "https://www.studiebolig-odense.dk/apartments/0302010103020102902?language=da",
+                "https://www.studiebolig-odense.dk/apartments/0302011003020102902?language=da",
+                "https://www.studiebolig-odense.dk/apartments/0302011703020102902?language=da",
+                "https://www.studiebolig-odense.dk/apartments/0302011203020102902?language=da",
+                "https://www.studiebolig-odense.dk/apartments/0302010903020102902?language=da",
+                "https://www.studiebolig-odense.dk/apartments/0302011103020102902?language=da",
+                "https://www.studiebolig-odense.dk/apartments/0302011403020102902?language=da",
+                "https://www.studiebolig-odense.dk/apartments/0302011303020102902?language=da",
+                "https://www.studiebolig-odense.dk/apartments/0302010203020102902?language=da",
+                "https://www.studiebolig-odense.dk/apartments/0302022703020102902?language=da",
+                "https://www.studiebolig-odense.dk/apartments/0302022603020102902?language=da",
+                "https://www.studiebolig-odense.dk/apartments/0302022203020102902?language=da",
+                "https://www.studiebolig-odense.dk/apartments/0302022303020102902?language=da",
+                "https://www.studiebolig-odense.dk/apartments/0302022103020102902?language=da",
+                "https://www.studiebolig-odense.dk/apartments/0302021903020102902?language=da",
+                "https://www.studiebolig-odense.dk/apartments/0302020303020102902?language=da",
+                "https://www.studiebolig-odense.dk/apartments/0302020403020102902?language=da",
+                "https://www.studiebolig-odense.dk/apartments/0302022003020102902?language=da",
+                "https://www.studiebolig-odense.dk/apartments/0302032503020102902?language=da",
+                "https://www.studiebolig-odense.dk/apartments/0302030503020102902?language=da",
+                "https://www.studiebolig-odense.dk/apartments/0302032403020102902?language=da"
+            ],
+            "own": [
+                [],
+                [],
+                [],
+                [],
+                [],
+                [
+                    "kitchen",
+                    "bath",
+                    "toilet"
+                ],
+                [
+                    "kitchen",
+                    "bath",
+                    "toilet"
+                ],
+                [
+                    "kitchen",
+                    "bath",
+                    "toilet"
+                ],
+                [],
+                [
+                    "kitchen",
+                    "bath",
+                    "toilet"
+                ],
+                [
+                    "kitchen",
+                    "bath",
+                    "toilet"
+                ],
+                [
+                    "kitchen",
+                    "bath",
+                    "toilet"
+                ],
+                [
+                    "kitchen",
+                    "bath",
+                    "toilet"
+                ],
+                [
+                    "kitchen",
+                    "bath",
+                    "toilet"
+                ],
+                [
+                    "kitchen",
+                    "bath",
+                    "toilet"
+                ],
+                [
+                    "kitchen",
+                    "bath",
+                    "toilet"
+                ],
+                [
+                    "kitchen",
+                    "bath",
+                    "toilet"
+                ],
+                [
+                    "kitchen",
+                    "bath",
+                    "toilet"
+                ],
+                [
+                    "kitchen",
+                    "bath",
+                    "toilet"
+                ],
+                [
+                    "kitchen",
+                    "bath",
+                    "toilet"
+                ],
+                [
+                    "kitchen",
+                    "bath",
+                    "toilet"
+                ],
+                [
+                    "kitchen",
+                    "bath",
+                    "toilet"
+                ],
+                [
+                    "kitchen",
+                    "bath",
+                    "toilet"
+                ],
+                [
+                    "kitchen",
+                    "bath",
+                    "toilet"
+                ],
+                [
+                    "kitchen",
+                    "bath",
+                    "toilet"
+                ]
+            ],
+            "shared": [
+                [
+                    "kitchen",
+                    "bath",
+                    "toilet"
+                ],
+                [
+                    "kitchen",
+                    "bath",
+                    "toilet"
+                ],
+                [
+                    "kitchen",
+                    "bath",
+                    "toilet"
+                ],
+                [
+                    "kitchen",
+                    "bath",
+                    "toilet"
+                ],
+                [
+                    "kitchen",
+                    "bath",
+                    "toilet"
+                ],
+                [],
+                [],
+                [],
+                [
+                    "kitchen",
+                    "bath",
+                    "toilet"
+                ],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                []
+            ]
         }
     },
     {
