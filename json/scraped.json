@@ -2009,6 +2009,11 @@
         "link": "https://www.studiebolig-odense.dk/departments/306",
         "alt-link": "https://www.kollegieboligselskabet.dk/vores-afdelinger/bredstedgadekollegiet/",
         "decoding_function": "decode_studiebolig_odense",
+        "location": {
+            "address": "Bredstedgade 40, 5000 Odense",
+            "lat": 55.40424892201646,
+            "lon": 10.389145113682632
+        },
         "facilities": [
             "24 lejligheder p\u00e5 3 v\u00e6relser med f\u00e6lles k\u00f8kken og bad",
             "72 beboere",
@@ -2077,6 +2082,11 @@
         "link": "https://www.studiebolig-odense.dk/departments/305",
         "alt-link": "https://www.kollegieboligselskabet.dk/vores-afdelinger/munke-mose-park/",
         "decoding_function": "decode_studiebolig_odense",
+        "location": {
+            "address": "Jagtvej 59, 5000 Odense",
+            "lat": 55.38968520353297,
+            "lon": 10.38482042243348
+        },
         "facilities": [
             "D\u00f8rtelefon",
             "Eget k\u00f8kken med k\u00f8le/fryseskab, keramiske kogeplader og indbygningsovn",
@@ -2443,6 +2453,11 @@
         "link": "https://www.studiebolig-odense.dk/departments/308?language=da",
         "alt-link": "https://www.kollegieboligselskabet.dk/vores-afdelinger/pjentedamsgadekollegiet/",
         "decoding_function": "decode_studiebolig_odense",
+        "location": {
+            "address": "Pjentedamsgade 30, 5000 Odense",
+            "lat": 55.40097569615872,
+            "lon": 10.392467940928075
+        },
         "facilities": [
             "Totalrenoveret ejendom fra 1888",
             "32 beboere",

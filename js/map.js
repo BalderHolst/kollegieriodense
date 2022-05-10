@@ -22,8 +22,13 @@ function add_markers(data){
 
     for(i = 0; i < data.length;i++){
         let place = data[i]
+
+        if(place.location == undefined){
+            console.log(place.name + " has no location");
+            continue;
+        }
+
         let location = place.location
-        // console.log(locations);
 
 
         new mapboxgl.Marker({
