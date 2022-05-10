@@ -2,9 +2,10 @@
     {
         "name": "Blangstedg\u00e5rdkollegiet",
         "link": "https://www.studiebolig-odense.dk/departments/314",
+        "alt-link": "https://www.kollegieboligselskabet.dk/vores-afdelinger/blangstedgaardkollegiet",
         "img": "blangstedgaardkollegiet.jpg",
         "decoding_function": "decode_studiebolig_odense",
-        "description": "Nyere r\u00e6kkehuslignende ungdomsboliger.",
+        "description": "R\u00e6kkehuslignende ungdomsboliger i natursk\u00f8nne og rolige omgivelser. Boligerne ligger i cykelafstand fra Syddansk Universitet, Bilka, og Roseng\u00e5rdscenteret som er Danmarks st\u00f8rste shopping center med tilh\u00f8rende biograf. Der er god mulighed for hygge i f\u00e6llesrummet, hvor der ofte afholdes spil- og quiz aftener og f\u00e6llesfester.",
         "facilities": [
             "50 beboere",
             "20 etv\u00e6relses-, 5 halvandenv\u00e6relses- og 10 tov\u00e6relseslejligheder",
