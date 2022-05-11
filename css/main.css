@@ -3,8 +3,7 @@
 	--rows: 3;
 	--header-font: 'Bahnschrift SemiBold', sans-serif;
 	--accent-color: #b3ebfc;
-	--space: 13%;
-	--extra-space: 1vw;
+	--space: max(calc(14vw - 50px), 5px);
 	--corner-radius: 4px;
 	--shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	--general-delay: 200ms;
@@ -85,7 +84,7 @@ header a{
 }
 
 .text-box, #map{
-	margin: 20px calc(var(--space) + var(--extra-space));
+	margin: 20px var(--space);
 	padding: 20px 30px;
 	background-color: white;
 	box-shadow: var(--shadow);

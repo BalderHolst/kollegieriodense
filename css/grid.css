@@ -6,7 +6,7 @@
 
 
 #grid-container {
-	margin: 0px var(--space);
+	margin: 0 calc(var(--space) - 1vh);
 	display: grid;
 	
 	/* grid-template-columns: repeat(auto-fill,minmax(150px,calc(100%/var(--rows)))); */
@@ -18,7 +18,7 @@
 .sorting {
     position: relative;
     text-align: right;
-    margin: 15px calc(var(--space) + var(--extra-space));
+    margin: 15px var(--space);
 }
 
 
@@ -55,7 +55,7 @@
 	background-color: #FFFFFF;
 	/*border: 1px solid black;*/
 	padding: 0px;
-	margin: 0px var(--extra-space) 36px var(--extra-space);
+	margin: 0px 1vh 36px 1vh;
 	border-radius: var(--corner-radius);
 
 	position: relative;
