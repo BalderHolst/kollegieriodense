@@ -284,6 +284,11 @@
             "address": "Toldbodgade 37, 5000 Odense",
             "lat" : 55.404530851145424,
             "lon": 10.37632187794592
+        },
+        "dorms": {
+            "prices": ["3300"],
+            "depositum": ["9900"],
+            "space": ["37", "44"]
         }
     }
 ]
