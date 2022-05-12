@@ -263,5 +263,27 @@
             "lat": 55.40097569615872,
             "lon": 10.392467940928075
         }
+    },
+    {
+        "name": "PFA Kollegiet",
+        "description": "PFA Kollegiet i Odense stod færdigt i starten 2020 og er klar til at tage imod 298 studerende, der vælger fællesskabet og ønsker at bo flot og bæredygtigt.",
+        "link" : "https://www.pfakollegiet-odense.dk/vaerelserne/",
+        "redirect": true,
+        "decoding_function": false,
+        "facilities": [
+            "Vaskeri",
+            "Cykelparkering",
+            "Elevator",
+            "Fælleskøkken",
+            "Fitness-rum",
+            "Studierum",
+            "Gård"
+        ],
+        "img": "pfa.jpg",
+        "location": {
+            "address": "Toldbodgade 37, 5000 Odense",
+            "lat" : 55.404530851145424,
+            "lon": 10.37632187794592
+        }
     }
 ]

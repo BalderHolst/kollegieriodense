@@ -172,6 +172,7 @@
     {
         "name": "H. C. \u00d8rsteds Kollegiet",
         "link": "https://www.studiebolig-odense.dk/departments/4301?page=1&language=da",
+        "alt-link": "https://www.hcokollegiet.dk/",
         "img": "H.C. Orstedkollegiet.jpg",
         "decoding_function": "decode_studiebolig_odense",
         "description": "H.C. \u00d8rstedkollegiet ligger p\u00e5 Niels Bohrs All\u00e9 i Odense. Det ligger t\u00e6t ved Hjallese, ca. 3,5 km. fra byens centrum, 3 km. fra Roseng\u00e5rdcentret og er centralt placeret i forhold til studiesteder og indk\u00f8bsmuligheder.",
@@ -3061,6 +3062,28 @@
                 [],
                 []
             ]
+        }
+    },
+    {
+        "name": "PFA Kollegiet",
+        "description": "PFA Kollegiet i Odense stod f\u00e6rdigt i starten 2020 og er klar til at tage imod 298 studerende, der v\u00e6lger f\u00e6llesskabet og \u00f8nsker at bo flot og b\u00e6redygtigt.",
+        "link": "https://www.pfakollegiet-odense.dk/vaerelserne/",
+        "redirect": true,
+        "decoding_function": false,
+        "facilities": [
+            "Vaskeri",
+            "Cykelparkering",
+            "Elevator",
+            "F\u00e6llesk\u00f8kken",
+            "Fitness-rum",
+            "Studierum",
+            "G\u00e5rd"
+        ],
+        "img": "pfa.jpg",
+        "location": {
+            "address": "Toldbodgade 37, 5000 Odense",
+            "lat": 55.404530851145424,
+            "lon": 10.37632187794592
         }
     }
 ]
